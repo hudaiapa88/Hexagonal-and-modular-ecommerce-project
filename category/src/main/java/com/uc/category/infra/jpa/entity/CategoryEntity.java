@@ -15,11 +15,14 @@ import java.util.UUID;
 public class CategoryEntity {
 
     @Id
-    @GeneratedValue(generator = "UUID")
-    @GenericGenerator(
-            name = "UUID",
-            strategy = "org.hibernate.id.UUIDGenerator"
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "generator_sequence"
     )
-    private UUID id;
+    @SequenceGenerator(
+            name = "generator_sequence",
+            allocationSize = 1
+    )
+    private Long id;
     private String title;
 }

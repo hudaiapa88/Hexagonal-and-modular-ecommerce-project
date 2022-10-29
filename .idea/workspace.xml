@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="20239ab4-cf0e-4650-a4a6-945ac82f31f2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/uc/application/PingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/domain/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/domain/port/CategoryPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/domain/usecase/CreateCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/domain/usecase/CreateCategoryUseCaseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/adapter/CategoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/mapper/BaseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/mapper/CategoryEntityToCategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/mapper/CategoryToCategoryResponseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/uc/common/DomainComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/uc/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/uc/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/category/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/jpa/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/jpa/entity/CategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/request/createCategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/request/CreateCategoryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/request/updateCategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/request/UpdateCategoryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/response/CategoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/response/CategoryResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/uc/common/usecase/UserCaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/uc/common/usecase/UseCaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2GUxe55DHlsE3ILI7AUkXw4VjYj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/bootfiy/shopping",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "p"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\uranuscode project\cafe" />
+      <recent name="C:\uranuscode project\cafe\category" />
+      <recent name="C:\uranuscode project\cafe\category\src\main\java\com\uc\category" />
+      <recent name="C:\uranuscode project\cafe\common" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\uranuscode project\cafe\application" />
+      <recent name="C:\uranuscode project\cafe\account\src\main\java\com\uc\account" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.uc.common" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.uc.common" />
+      <recent name="com.uc.application" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn help:effective-pom " />
+      <command value="java -jar lombok.jar config -g --verbose" />
+      <command value="mvn compile" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="com.uc.application.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.uc.application.Application" />
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uc.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.uc.application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20239ab4-cf0e-4650-a4a6-945ac82f31f2" name="Changes" comment="" />
+      <created>1666457056803</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666457056803</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
+    <option name="sizePresets">
+      <list>
+        <SizePreset>
+          <option name="caption" value="Phone" />
+          <option name="height" value="568" />
+          <option name="width" value="320" />
+        </SizePreset>
+        <SizePreset>
+          <option name="caption" value="Tablet" />
+          <option name="height" value="1024" />
+          <option name="width" value="768" />
+        </SizePreset>
+        <SizePreset>
+          <option name="caption" value="Desktop" />
+          <option name="height" value="900" />
+          <option name="width" value="1440" />
+        </SizePreset>
+      </list>
+    </option>
+  </component>
+</project>
