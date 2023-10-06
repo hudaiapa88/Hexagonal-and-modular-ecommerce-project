@@ -5,41 +5,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20239ab4-cf0e-4650-a4a6-945ac82f31f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/uc/application/PingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/domain/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/domain/port/CategoryPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/domain/usecase/CreateCategoryUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/domain/usecase/CreateCategoryUseCaseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/adapter/CategoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/mapper/BaseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/mapper/CategoryEntityToCategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/mapper/CategoryToCategoryResponseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/uc/common/DomainComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/domain/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/domain/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/domain/model/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/domain/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/domain/port/AccountPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/domain/usecase/CreateAccountUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/domain/usecase/CreateAccountUseCaseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/infra/adapter/AccountAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/infra/jpa/entity/AccountEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/infra/jpa/entity/AddressEmbedded.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/infra/jpa/entity/PhoneEmbedded.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/infra/jpa/entity/RoleEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/infra/jpa/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/infra/jpa/repository/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/infra/jpa/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/uc/account/infra/rest/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/uc/common/mapper/BaseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/docker-compose-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/domain/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/domain/port/ProductPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/domain/usecase/CreateProductUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/domain/usecase/CreateProductUseCaseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/infra/adapter/ProductAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/infra/jpa/entity/ProductEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/infra/jpa/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/infra/mapper/BaseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/infra/mapper/ProductEntityToProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/infra/mapper/ProductToProductResponseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/infra/rest/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/infra/rest/request/CreateProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/infra/rest/request/UpdateProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/uc/product/infra/rest/response/ProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/test/java/com/uc/product/ProductApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/uc/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/uc/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/category/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/category/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/jpa/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/jpa/entity/CategoryEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/request/createCategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/request/CreateCategoryRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/request/updateCategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/request/UpdateCategoryRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/response/CategoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/response/CategoryResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/domain/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/domain/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/domain/port/CategoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/domain/port/CategoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/domain/usecase/CreateCategoryUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/domain/usecase/CreateCategoryUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/domain/usecase/CreateCategoryUseCaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/domain/usecase/CreateCategoryUseCaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/adapter/CategoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/infra/adapter/CategoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/jpa/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/infra/jpa/entity/CategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/jpa/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/infra/jpa/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/mapper/BaseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/infra/mapper/BaseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/mapper/CategoryEntityToCategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/infra/mapper/CategoryEntityToCategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/mapper/CategoryToCategoryResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/infra/mapper/CategoryToCategoryResponseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/infra/rest/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/request/CreateCategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/infra/rest/request/CreateCategoryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/request/UpdateCategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/infra/rest/request/UpdateCategoryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/java/com/uc/category/infra/rest/response/CategoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/main/java/com/uc/product/infra/rest/response/CategoryResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/src/test/java/com/uc/category/CategoryApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/test/java/com/uc/product/CategoryApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/uc/common/usecase/UserCaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/uc/common/usecase/UseCaseHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +91,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -79,21 +107,24 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/bootfiy/shopping",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/github_demo_projeler/Hexagonal-and-modular-restourant-project",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "p"
+    "project.structure.side.proportion": "0.3954023",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project\account\src\main\java\com\uc\account\domain\model" />
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project" />
       <recent name="C:\uranuscode project\cafe" />
       <recent name="C:\uranuscode project\cafe\category" />
       <recent name="C:\uranuscode project\cafe\category\src\main\java\com\uc\category" />
-      <recent name="C:\uranuscode project\cafe\common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project\docker" />
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project\application" />
       <recent name="C:\uranuscode project\cafe\application" />
       <recent name="C:\uranuscode project\cafe\account\src\main\java\com\uc\account" />
     </key>
@@ -101,6 +132,7 @@
       <recent name="com.uc.common" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.uc.account.domain.model" />
       <recent name="com.uc.common" />
       <recent name="com.uc.application" />
     </key>
@@ -113,7 +145,20 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.com.uc.application.Application">
+    <configuration name="CategoryAdapter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.uc.product.infra.adapter.CategoryAdapter" />
+      <module name="category" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uc.product.infra.adapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="com.uc.application.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.uc.application.Application" />
       <module name="application" />
@@ -130,6 +175,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.com.uc.application.Application" />
+        <item itemvalue="Application.com.uc.product.infra.adapter.CategoryAdapter" />
       </list>
     </recent_temporary>
   </component>
