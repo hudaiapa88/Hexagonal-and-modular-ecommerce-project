@@ -13,6 +13,4 @@ public interface BaseMapper <Input, Out>{
     @IterableMapping(qualifiedByName = "convert")
     List<Out> convertList(List<Input> entityList);
 
-
-
 }

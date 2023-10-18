@@ -5,7 +5,7 @@ import com.uc.catalog.domain.category.model.Category;
 import com.uc.catalog.domain.category.usecase.DeleteCategoryUseCase;
 import com.uc.catalog.domain.category.usecase.UpdateCategoryUseCase;
 
-public interface CategoryPort {
+public interface CategoryPort{
 
     Category create(CreateCategoryUseCase createCategoryUseCase);
 

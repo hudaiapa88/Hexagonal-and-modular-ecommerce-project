@@ -1,7 +1,7 @@
 package com.uc.catalog.infra.adapters.category.mapper;
 
-import com.uc.category.domain.category.model.Category;
-import com.uc.category.infra.rest.response.CategoryResponse;
+import com.uc.catalog.domain.category.model.Category;
+import com.uc.catalog.infra.adapters.category.rest.response.CategoryResponse;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

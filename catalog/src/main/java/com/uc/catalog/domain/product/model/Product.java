@@ -1,5 +1,6 @@
 package com.uc.catalog.domain.product.model;
 
+import com.uc.catalog.domain.category.model.Category;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -12,7 +13,6 @@ import java.math.BigDecimal;
 public class Product {
     private Long id;
     private String title;
-    private Long categoryId;
+    private Category category;
     private BigDecimal price;
-    private Integer quantity;
 }

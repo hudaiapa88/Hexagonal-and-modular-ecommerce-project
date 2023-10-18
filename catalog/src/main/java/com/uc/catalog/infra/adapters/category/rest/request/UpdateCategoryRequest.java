@@ -1,6 +1,6 @@
 package com.uc.catalog.infra.adapters.category.rest.request;
 
-import com.uc.category.domain.category.usecase.UpdateCategoryUseCase;
+import com.uc.catalog.domain.category.usecase.UpdateCategoryUseCase;
 import lombok.Getter;
 import lombok.Setter;
 

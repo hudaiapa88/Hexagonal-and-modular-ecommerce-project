@@ -1,13 +1,13 @@
 package com.uc.catalog.infra.adapters.category.rest;
 
-import com.uc.category.domain.category.model.Category;
-import com.uc.category.domain.category.usecase.CreateCategoryUseCase;
-import com.uc.category.domain.category.usecase.DeleteCategoryUseCase;
-import com.uc.category.domain.category.usecase.UpdateCategoryUseCase;
-import com.uc.category.infra.mapper.CategoryToCategoryResponseMapper;
-import com.uc.category.infra.rest.request.CreateCategoryRequest;
-import com.uc.category.infra.rest.request.UpdateCategoryRequest;
-import com.uc.category.infra.rest.response.CategoryResponse;
+import com.uc.catalog.domain.category.model.Category;
+import com.uc.catalog.domain.category.usecase.CreateCategoryUseCase;
+import com.uc.catalog.domain.category.usecase.DeleteCategoryUseCase;
+import com.uc.catalog.domain.category.usecase.UpdateCategoryUseCase;
+import com.uc.catalog.infra.adapters.category.mapper.CategoryToCategoryResponseMapper;
+import com.uc.catalog.infra.adapters.category.rest.request.CreateCategoryRequest;
+import com.uc.catalog.infra.adapters.category.rest.request.UpdateCategoryRequest;
+import com.uc.catalog.infra.adapters.category.rest.response.CategoryResponse;
 import com.uc.common.usecase.UseCaseHandler;
 import com.uc.common.usecase.VoidUseCaseHandler;
 import lombok.RequiredArgsConstructor;

@@ -15,7 +15,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories(basePackages = "com.uc")
 @EntityScan(basePackages = "com.uc")
 @ComponentScan(
-		basePackages = "com.uc",
+		basePackages =
+				"com.uc",
 		includeFilters = {
 				@ComponentScan.Filter(type = FilterType.ANNOTATION, value = {DomainComponent.class})
 		}

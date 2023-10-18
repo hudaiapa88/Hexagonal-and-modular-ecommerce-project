@@ -2,6 +2,7 @@ package com.uc.common.rest.exception.handler;
 
 
 import com.uc.common.rest.exception.base.BaseException;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestControllerAdvice
+@RequiredArgsConstructor
 public class ApiExceptionHandler  {
 
     @ExceptionHandler(MethodArgumentNotValidException.class)

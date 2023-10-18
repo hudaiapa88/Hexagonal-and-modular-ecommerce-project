@@ -1,7 +1,7 @@
 package com.uc.catalog.domain.category.usecase;
 
-import com.uc.category.domain.category.model.Category;
-import com.uc.category.domain.category.port.CategoryPort;
+import com.uc.catalog.domain.category.model.Category;
+import com.uc.catalog.domain.category.port.CategoryPort;
 import com.uc.common.DomainComponent;
 import com.uc.common.usecase.UseCaseHandler;
 import lombok.RequiredArgsConstructor;

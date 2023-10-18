@@ -1,7 +1,11 @@
 package com.uc.catalog.infra.adapters.product.jpa.entity;
 
+import com.uc.catalog.domain.category.model.Category;
+import com.uc.catalog.infra.adapters.category.jpa.entity.CategoryEntity;
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.math.BigDecimal;
 
 
 @Entity
@@ -9,7 +13,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
-@Table(name = "category")
+@Table(name = "product")
 public class ProductEntity {
 
     @Id
@@ -23,4 +27,7 @@ public class ProductEntity {
     )
     private Long id;
     private String title;
+    @ManyToOne
+    private CategoryEntity category;
+    private BigDecimal price;
 }

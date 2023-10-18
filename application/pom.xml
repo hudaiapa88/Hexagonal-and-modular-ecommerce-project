@@ -22,14 +22,10 @@
 		</dependency>
 		<dependency>
 			<groupId>com.uc</groupId>
-			<artifactId>category</artifactId>
+			<artifactId>catalog</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>com.uc</groupId>
-			<artifactId>product</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+
 	</dependencies>
 
 </project>

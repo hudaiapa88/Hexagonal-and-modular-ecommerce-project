@@ -31,7 +31,7 @@
     <properties>
         <java.version>17</java.version>
         <project.groupId>com.uc</project.groupId>
-        <project.artifactId>restaurant</project.artifactId>
+        <project.artifactId>ecommerce</project.artifactId>
         <project.version>1.0-SNAPSHOT</project.version>
     </properties>
     <dependencies>
