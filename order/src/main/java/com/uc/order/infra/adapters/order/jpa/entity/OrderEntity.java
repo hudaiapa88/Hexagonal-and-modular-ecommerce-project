@@ -1,19 +1,21 @@
-package com.uc.account.infra.adapter.account.jpa.entity;
+package com.uc.order.infra.adapters.order.jpa.entity;
 
+import com.uc.order.infra.adapters.orderLine.jpa.entity.OrderLineEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
+import java.util.ArrayList;
+import java.util.List;
 
+@Entity
 @Getter
 @Setter
-@Entity
-@Table(name ="account")
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "role", discriminatorType = DiscriminatorType.STRING)
-public class AccountEntity {
+@Table(name = "\"order\"")
+public class OrderEntity {
     @Id
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
@@ -25,9 +27,10 @@ public class AccountEntity {
     )
     private Long id;
     private LocalDateTime createdDateTime;
-
     private LocalDateTime updatedDateTime;
-
+    @OneToMany(mappedBy = "order")
+    private List<OrderLineEntity> orderLines= new ArrayList<>();
+    private BigDecimal totalPrice;
     @PrePersist
     protected void onCreate() {
         updatedDateTime = createdDateTime = LocalDateTime.now(ZoneOffset.UTC);
@@ -38,17 +41,4 @@ public class AccountEntity {
         updatedDateTime = LocalDateTime.now(ZoneOffset.UTC);
     }
 
-    private String firstName;
-    private String lastName;
-    @Column(unique = true)
-    private String username;
-    private String password;
-    @Embedded
-    private PhoneEmbedded phone;
-    private String email;
-    @Column(insertable=false, updatable=false)
-    @Enumerated(EnumType.STRING)
-    private RoleEnum role;
-    private String verificationCode;
-    private Boolean isActive ;
 }
