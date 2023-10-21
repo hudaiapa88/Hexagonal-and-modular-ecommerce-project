@@ -17,6 +17,8 @@ public class CreateCategoryUseCaseHandler implements UseCaseHandler<Category, Cr
     @Override
     public Category handle(CreateCategoryUseCase createCategoryUseCase) {
        //Enterprise business rules
-        return categoryPort.create(createCategoryUseCase);
+        Category category= new Category();
+        category.setTitle(createCategoryUseCase.getTitle());
+        return categoryPort.save(category);
     }
 }

@@ -30,6 +30,9 @@ public class OrderEntity {
     private LocalDateTime updatedDateTime;
     @OneToMany(mappedBy = "order")
     private List<OrderLineEntity> orderLines= new ArrayList<>();
+    @Embedded
+    private AddressEntity address;
+
     private BigDecimal totalPrice;
     @PrePersist
     protected void onCreate() {

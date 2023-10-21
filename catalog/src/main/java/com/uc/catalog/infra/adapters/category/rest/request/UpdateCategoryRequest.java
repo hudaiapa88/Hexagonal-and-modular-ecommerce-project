@@ -8,7 +8,7 @@ import lombok.Setter;
 @Setter
 public class UpdateCategoryRequest {
        private String title;
-      public UpdateCategoryUseCase toModel(Long id){
+      public UpdateCategoryUseCase toUseCase(Long id){
            UpdateCategoryUseCase updateCategoryUseCase= new UpdateCategoryUseCase();
            updateCategoryUseCase.setId(id);
            updateCategoryUseCase.setTitle(title);

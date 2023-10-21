@@ -18,4 +18,6 @@ module order {
     requires com.uc.catalog;
     requires spring.tx;
     requires spring.orm;
+    requires org.hibernate.orm.core;
+    requires jakarta.validation;
 }

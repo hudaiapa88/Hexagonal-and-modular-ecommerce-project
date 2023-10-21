@@ -16,6 +16,7 @@ public class UpdateCategoryUseCaseHandler implements UseCaseHandler<Category, Up
     @Override
     public Category handle(UpdateCategoryUseCase value) {
         Category category=categoryPort.findById(value.getId());
-        return categoryPort.update(value);
+        category.setTitle(value.getTitle());
+        return categoryPort.save(category);
     }
 }

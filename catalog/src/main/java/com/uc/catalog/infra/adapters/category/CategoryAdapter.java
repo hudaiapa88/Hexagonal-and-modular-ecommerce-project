@@ -13,6 +13,8 @@ import com.uc.catalog.infra.adapters.category.mapper.CategoryEntityToCategoryMap
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class CategoryAdapter implements CategoryPort {
@@ -21,18 +23,13 @@ public class CategoryAdapter implements CategoryPort {
     private final CategoryEntityToCategoryMapper categoryEntityToCategoryMapper;
 
     @Override
-    public Category create(CreateCategoryUseCase createCategoryUseCase) {
+    public Category save(Category category) {
         CategoryEntity categoryEntity = new CategoryEntity();
-        categoryEntity.setTitle(createCategoryUseCase.getTitle());
+        categoryEntity.setTitle(category.getTitle());
         return categoryEntityToCategoryMapper.convert(categoryRepository.save(categoryEntity));
     }
 
-    @Override
-    public Category update(UpdateCategoryUseCase value) {
-        CategoryEntity category=findByCategoryId(value.getId());
-        category.setTitle(value.getTitle());
-        return categoryEntityToCategoryMapper.convert(categoryRepository.save(category));
-    }
+
     @Override
     public Category findById(Long id) {
         return categoryEntityToCategoryMapper.convert(findByCategoryId(id));
@@ -41,6 +38,11 @@ public class CategoryAdapter implements CategoryPort {
     @Override
     public void delete(DeleteCategoryUseCase value) {
         categoryRepository.deleteById(value.getId());
+    }
+
+    @Override
+    public List<Category> getAll() {
+        return categoryEntityToCategoryMapper.convertList(categoryRepository.findAll());
     }
 
     public CategoryEntity findByCategoryId(Long id) {

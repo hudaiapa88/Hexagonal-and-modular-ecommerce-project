@@ -11,4 +11,5 @@ open module common {
     exports com.uc.common.rest.exception;
     exports com.uc.common.base;
     exports com.uc.common;
+    exports com.uc.common.mapper;
 }

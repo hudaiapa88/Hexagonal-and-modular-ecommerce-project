@@ -8,7 +8,7 @@ import lombok.Setter;
 @Setter
 public class CreateCategoryRequest {
     private String title;
-    public CreateCategoryUseCase toModel() {
+    public CreateCategoryUseCase toUseCase() {
         return new CreateCategoryUseCase(title);
     }
 }

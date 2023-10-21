@@ -1,19 +1,21 @@
 package com.uc.catalog.infra.adapters.category.rest;
 
 import com.uc.catalog.domain.category.model.Category;
-import com.uc.catalog.domain.category.usecase.CreateCategoryUseCase;
-import com.uc.catalog.domain.category.usecase.DeleteCategoryUseCase;
-import com.uc.catalog.domain.category.usecase.UpdateCategoryUseCase;
+import com.uc.catalog.domain.category.port.CategoryPort;
+import com.uc.catalog.domain.category.usecase.*;
 import com.uc.catalog.infra.adapters.category.mapper.CategoryToCategoryResponseMapper;
 import com.uc.catalog.infra.adapters.category.rest.request.CreateCategoryRequest;
 import com.uc.catalog.infra.adapters.category.rest.request.UpdateCategoryRequest;
 import com.uc.catalog.infra.adapters.category.rest.response.CategoryResponse;
+import com.uc.common.usecase.NoUseCaseHandler;
 import com.uc.common.usecase.UseCaseHandler;
 import com.uc.common.usecase.VoidUseCaseHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("category")
@@ -23,17 +25,26 @@ public class CategoryController {
     private final UseCaseHandler<Category, CreateCategoryUseCase> createCategoryRequestUseCaseHandler;
     private final UseCaseHandler<Category, UpdateCategoryUseCase> updateCategoryRequestUseCaseHandler;
     private final VoidUseCaseHandler<DeleteCategoryUseCase> deleteCategoryUseCaseVoidUseCaseHandler;
+    private final UseCaseHandler<Category, GetByCategoryIdUseCase> getByCategoryIdUseCaseVoidUseCaseHandler;
+    private final NoUseCaseHandler<List<Category>> getAllCategoryUseCaseHandler;
     private final CategoryToCategoryResponseMapper categoryToCategoryResponseMapper;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<CategoryResponse> create(@RequestBody CreateCategoryRequest createCategoryRequest) {
-        return ResponseEntity.ok(categoryToCategoryResponseMapper.convert(createCategoryRequestUseCaseHandler.handle(createCategoryRequest.toModel())));
+        return ResponseEntity.ok(categoryToCategoryResponseMapper.convert(createCategoryRequestUseCaseHandler.handle(createCategoryRequest.toUseCase())));
     }
-
+    @GetMapping
+    public ResponseEntity<List<CategoryResponse>> getAll(){
+        return ResponseEntity.ok(categoryToCategoryResponseMapper.convertList(getAllCategoryUseCaseHandler.handle()));
+    }
+    @GetMapping("/{id}")
+    public ResponseEntity<CategoryResponse> getById(@PathVariable Long id){
+        return ResponseEntity.ok(categoryToCategoryResponseMapper.convert(getByCategoryIdUseCaseVoidUseCaseHandler.handle(new GetByCategoryIdUseCase(id))));
+    }
     @PutMapping("/{id}")
     public ResponseEntity<CategoryResponse> update(@PathVariable Long id, @RequestBody UpdateCategoryRequest updateCategoryRequest) {
-        return ResponseEntity.ok(categoryToCategoryResponseMapper.convert(updateCategoryRequestUseCaseHandler.handle(updateCategoryRequest.toModel(id))));
+        return ResponseEntity.ok(categoryToCategoryResponseMapper.convert(updateCategoryRequestUseCaseHandler.handle(updateCategoryRequest.toUseCase(id))));
     }
 
     @DeleteMapping("/{id}")

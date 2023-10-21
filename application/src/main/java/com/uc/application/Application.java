@@ -14,9 +14,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @SpringBootApplication(exclude = SecurityAutoConfiguration.class,scanBasePackages ="com.uc" )
-/*@EnableJpaRepositories(basePackages = "com.uc")
-@EntityScan(basePackages = "com.uc")*/
-
 @ComponentScan(
 		basePackages =
 				"com.uc",
