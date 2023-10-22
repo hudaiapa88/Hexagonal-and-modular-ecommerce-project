@@ -1,12 +1,12 @@
 package com.uc.order.infra.adapters.order.rest;
 
-import com.uc.catalog.domain.product.model.Product;
-import com.uc.catalog.domain.product.usecase.CreateProductUseCase;
-import com.uc.catalog.infra.adapters.product.mapper.ProductToProductResponseMapper;
+import com.uc.common.usecase.NoUseCaseHandler;
 import com.uc.common.usecase.UseCaseHandler;
+import com.uc.common.usecase.VoidUseCaseHandler;
 import com.uc.order.domain.order.model.Order;
 import com.uc.order.domain.order.usecase.CreateOrderUseCase;
 import com.uc.order.domain.order.usecase.DeleteOrderUseCase;
+import com.uc.order.domain.order.usecase.GetByOrderIdUseCase;
 import com.uc.order.domain.order.usecase.UpdateOrderUseCase;
 import com.uc.order.infra.adapters.order.mapper.OrderToOrderResponseMapper;
 import com.uc.order.infra.adapters.order.rest.request.CreateOrderRequest;
@@ -14,8 +14,7 @@ import com.uc.order.infra.adapters.order.rest.request.UpdateOrderRequest;
 import com.uc.order.infra.adapters.order.rest.response.OrderResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -26,7 +25,9 @@ import java.util.List;
 public class OrderController {
     private final UseCaseHandler<Order, CreateOrderUseCase> createOrderUseCaseHandler;
     private final UseCaseHandler<Order, UpdateOrderUseCase> updateOrderUseCaseHandler;
-    private final UseCaseHandler<Order, DeleteOrderUseCase> deleteOrderUseCaseHandler;
+    private final VoidUseCaseHandler<DeleteOrderUseCase> deleteOrderUseCaseHandler;
+    private final UseCaseHandler<Order, GetByOrderIdUseCase> getByOrderIdUseCaseHandler;
+    private final NoUseCaseHandler<List<Order>> getAllUseCase;
     private final OrderToOrderResponseMapper orderToOrderResponseMapper;
     @PostMapping
     public OrderResponse save(@Valid @RequestBody CreateOrderRequest createOrderRequest){
@@ -42,16 +43,16 @@ public class OrderController {
          deleteOrderUseCaseHandler.handle(new DeleteOrderUseCase(id));
     }
     @GetMapping("/{id}")
-    public OrderResponse getById(@PathVariable Long id){
-        return orderService.getById(id);
+    public ResponseEntity<OrderResponse> getById(@PathVariable Long id){
+        return ResponseEntity.ok(orderToOrderResponseMapper.convert(getByOrderIdUseCaseHandler.handle(new GetByOrderIdUseCase(id))))  ;
     }
 
-    @GetMapping("/pageable")
+   /* @GetMapping("/pageable")
     public Page<OrderResponse> getAll(Pageable pageable){
         return orderService.getAll(pageable);
-    }
+    }*/
     @GetMapping()
-    public List<OrderResponse> getAll(){
-        return orderService.getAll();
+    public ResponseEntity<List<OrderResponse>> getAll(){
+        return ResponseEntity.ok(orderToOrderResponseMapper.convertList(getAllUseCase.handle())) ;
     }
 }

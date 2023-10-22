@@ -19,7 +19,6 @@ import java.util.List;
 public class OrderAdapter implements OrderPort {
 
    private final OrderRepository orderRepository;
-   private final OrderLinePort orderLinePort;
    private final OrderEntityToOrderMapper orderEntityToOrderMapper;
    private final OrderToOrderEntityMapper orderToOrderEntityMapper;
     @Override
@@ -40,5 +39,10 @@ public class OrderAdapter implements OrderPort {
     @Override
     public void delete(DeleteOrderUseCase deleteOrderUseCase) {
        orderRepository.deleteById(deleteOrderUseCase.getId());
+    }
+
+    @Override
+    public List<Order> getAll() {
+        return orderEntityToOrderMapper.convertList(orderRepository.findAll());
     }
 }

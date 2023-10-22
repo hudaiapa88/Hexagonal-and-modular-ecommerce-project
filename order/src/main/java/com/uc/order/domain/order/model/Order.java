@@ -16,5 +16,6 @@ public class Order {
     private LocalDateTime createdDateTime;
     private LocalDateTime updatedDateTime;
     private List<OrderLine> orderLines= new ArrayList<>();
+    private Address address;
     private BigDecimal totalPrice;
 }

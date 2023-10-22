@@ -16,6 +16,7 @@ module com.uc.catalog {
 /*    requires jakarta.persistence;
     requires jakarta.transaction;
     requires jakarta.annotation;*/
+    requires com.fasterxml.jackson.databind;
     requires java.sql;
     requires com.zaxxer.hikari;
     requires org.slf4j;

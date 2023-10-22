@@ -14,6 +14,5 @@ import java.util.List;
 @Setter
 public class UpdateOrderUseCase implements UseCase {
     private Long id;
-    private List<CreateOrderLineUseCase> orderLines= new ArrayList<>();
     private Address address;
 }

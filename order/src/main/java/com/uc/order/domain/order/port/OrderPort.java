@@ -11,4 +11,6 @@ public interface OrderPort {
     Order save(Order order);
     Order getByOrderId(Long id);
     void delete(DeleteOrderUseCase deleteOrderUseCase);
+
+    List<Order> getAll();
 }

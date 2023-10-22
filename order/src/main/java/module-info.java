@@ -13,6 +13,7 @@ module order {
     requires org.slf4j;
     requires org.mapstruct;
     requires spring.data.jpa;
+
     requires jakarta.persistence;
     requires java.sql;
     requires com.uc.catalog;
@@ -20,4 +21,5 @@ module order {
     requires spring.orm;
     requires org.hibernate.orm.core;
     requires jakarta.validation;
+    requires com.fasterxml.jackson.databind;
 }

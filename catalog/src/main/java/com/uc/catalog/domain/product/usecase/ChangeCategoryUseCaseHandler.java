@@ -18,7 +18,7 @@ public class ChangeCategoryUseCaseHandler implements UseCaseHandler<Product, Cha
     private final CategoryPort categoryPort;
     @Override
     public Product handle(ChangeCategoryUseCase changeCategoryUseCase) {
-        Product product=productPort.findById(changeCategoryUseCase.getId());
+        Product product=productPort.getById(changeCategoryUseCase.getId());
         Category category=categoryPort.findById(changeCategoryUseCase.getCategoryId());
         product.setCategory(category);
         return productPort.save(product);
