@@ -5,13 +5,12 @@ import com.uc.catalog.infra.adapters.category.jpa.entity.CategoryEntity;
 import com.uc.common.rest.exception.EntityNotFoundException;
 import com.uc.catalog.domain.category.model.Category;
 import com.uc.catalog.domain.category.port.CategoryPort;
-import com.uc.catalog.domain.category.usecase.CreateCategoryUseCase;
 import com.uc.catalog.domain.category.usecase.DeleteCategoryUseCase;
-import com.uc.catalog.domain.category.usecase.UpdateCategoryUseCase;
 import com.uc.catalog.infra.adapters.category.jpa.repository.CategoryRepository;
 import com.uc.catalog.infra.adapters.category.mapper.CategoryEntityToCategoryMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import jakarta.transaction.Transactional;
 
 import java.util.List;
 

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 /*
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-10-23T01:48:56+0300",
+    date = "2023-10-24T00:48:51+0300",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.3 (Amazon.com Inc.)"
 )
 */
@@ -79,7 +79,6 @@ public class OrderLineToOrderLineEntityMapperImpl implements OrderLineToOrderLin
         orderEntity.setId( order.getId() );
         orderEntity.setCreatedDateTime( order.getCreatedDateTime() );
         orderEntity.setUpdatedDateTime( order.getUpdatedDateTime() );
-        orderEntity.setOrderLines( convertList( order.getOrderLines() ) );
         orderEntity.setAddress( addressToAddressEntity( order.getAddress() ) );
         orderEntity.setTotalPrice( order.getTotalPrice() );
 

@@ -11,6 +11,7 @@ import com.uc.catalog.infra.adapters.product.mapper.ProductToProductEntityMapper
 import com.uc.common.rest.exception.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import jakarta.transaction.Transactional;
 
 import java.util.List;
 

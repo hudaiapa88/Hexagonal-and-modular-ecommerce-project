@@ -23,6 +23,9 @@ module com.uc.catalog {
     requires org.mapstruct;
     requires org.hibernate.orm.core;
     requires jakarta.persistence;
+    requires jakarta.annotation;
+    requires jakarta.transaction ;
+    requires jakarta.cdi;
     exports com.uc.catalog.api.category;
     exports com.uc.catalog.api.product;
 }

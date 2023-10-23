@@ -9,7 +9,6 @@ import lombok.Setter;
 @Setter
 public class CreateOrderLineRequest {
     private Long productId;
-    @NotEmpty(message = "Miktar boş geçilemez")
     private Integer quantity;
 
     public CreateOrderLineUseCase toUseCase() {

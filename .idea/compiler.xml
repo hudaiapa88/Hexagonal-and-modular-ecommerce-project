@@ -37,6 +37,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Hexagonal-and-modular-ecommerce-project" options="" />
       <module name="account" options="-parameters" />
       <module name="application" options="-parameters" />
       <module name="cafe" options="-parameters" />

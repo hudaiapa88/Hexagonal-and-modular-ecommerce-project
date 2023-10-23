@@ -8,13 +8,16 @@ import com.uc.order.infra.adapters.orderLine.jpa.entity.OrderLineEntity;
 import com.uc.order.infra.adapters.orderLine.jpa.repository.OrderLineRepository;
 import com.uc.order.infra.adapters.orderLine.mapper.OrderLineEntityToOrderLineMapper;
 import com.uc.order.infra.adapters.orderLine.mapper.OrderLineToOrderLineEntityMapper;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
 
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class OrderLineAdapter implements OrderLinePort {
 
   private final OrderLineRepository orderLineRepository;;

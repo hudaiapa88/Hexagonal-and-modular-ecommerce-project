@@ -15,6 +15,8 @@ import com.uc.order.infra.adapters.order.rest.response.OrderResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,6 +24,7 @@ import java.util.List;
 @RestController
 @RequestMapping("order")
 @RequiredArgsConstructor
+@Transactional("orderTransactionManager")
 public class OrderController {
     private final UseCaseHandler<Order, CreateOrderUseCase> createOrderUseCaseHandler;
     private final UseCaseHandler<Order, UpdateOrderUseCase> updateOrderUseCaseHandler;
@@ -30,6 +33,7 @@ public class OrderController {
     private final NoUseCaseHandler<List<Order>> getAllUseCase;
     private final OrderToOrderResponseMapper orderToOrderResponseMapper;
     @PostMapping
+
     public OrderResponse save(@Valid @RequestBody CreateOrderRequest createOrderRequest){
         return orderToOrderResponseMapper.convert(createOrderUseCaseHandler.handle(createOrderRequest.toUseCase()));
     }

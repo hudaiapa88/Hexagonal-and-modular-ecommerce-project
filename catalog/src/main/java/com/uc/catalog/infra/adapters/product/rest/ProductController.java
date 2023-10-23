@@ -9,11 +9,13 @@ import com.uc.common.usecase.UseCaseHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("product")
 @RequiredArgsConstructor
+@Transactional("catalogTransactionManager")
 public class ProductController {
 
     private final UseCaseHandler<Product, CreateProductUseCase> createProductRequestUseCaseHandler;

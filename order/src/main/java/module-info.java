@@ -13,8 +13,9 @@ module order {
     requires org.slf4j;
     requires org.mapstruct;
     requires spring.data.jpa;
-
     requires jakarta.persistence;
+    requires jakarta.transaction;
+    requires jakarta.cdi;
     requires java.sql;
     requires com.uc.catalog;
     requires spring.tx;

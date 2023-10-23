@@ -28,8 +28,6 @@ public class OrderEntity {
     private Long id;
     private LocalDateTime createdDateTime;
     private LocalDateTime updatedDateTime;
-    @OneToMany(mappedBy = "order")
-    private List<OrderLineEntity> orderLines= new ArrayList<>();
     @Embedded
     private AddressEntity address;
 

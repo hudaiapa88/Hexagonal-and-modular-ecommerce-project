@@ -11,6 +11,7 @@ import com.uc.order.infra.adapters.order.mapper.OrderEntityToOrderMapper;
 import com.uc.order.infra.adapters.order.mapper.OrderToOrderEntityMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 

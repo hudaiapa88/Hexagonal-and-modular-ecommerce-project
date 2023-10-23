@@ -7,6 +7,8 @@ open module common {
     requires spring.boot;
     requires spring.core;
     requires spring.boot.starter.web;
+    requires io.swagger.v3.oas.annotations;
+    requires io.swagger.v3.oas.models;
     exports com.uc.common.usecase;
     exports com.uc.common.rest.exception;
     exports com.uc.common.base;

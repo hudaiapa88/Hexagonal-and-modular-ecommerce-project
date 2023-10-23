@@ -8,9 +8,8 @@ import com.uc.catalog.api.product.ProductApi;
 import com.uc.order.domain.catalog.model.Product;
 import com.uc.order.domain.catalog.port.ProductPort;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.stereotype.Component;
-
+import jakarta.transaction.Transactional;
 import java.util.List;
 
 @Component

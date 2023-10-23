@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.uc.catalog.domain.category.model.Category;
 import com.uc.catalog.domain.category.usecase.GetByCategoryIdUseCase;
 import com.uc.common.usecase.UseCaseHandler;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
