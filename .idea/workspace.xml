@@ -5,53 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20239ab4-cf0e-4650-a4a6-945ac82f31f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/uc/common/config/OpenApiConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/uc/application/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/uc/common/config/CommonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/domain/catalog/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/domain/catalog/port/ProductPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/infra/adapters/catalog/ProductApiAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/infra/adapters/config/InventoryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/infra/adapters/config/InventoryDatasourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/infra/adapters/inventory/InventoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/infra/adapters/inventory/jpa/entity/InventoryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/infra/adapters/inventory/jpa/repository/InventoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryEntityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/infra/adapters/inventory/rest/InventoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/resources/inventory.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/api/category/CategoryApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/api/category/CategoryApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/api/product/ProductApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/api/product/ProductApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/category/CategoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/category/CategoryAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/category/rest/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/category/rest/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/ProductAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/ProductAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/rest/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/rest/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/rest/response/ProductResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/rest/response/ProductResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/domain/order/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/domain/order/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/domain/order/usecase/CreateOrderUseCaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/domain/order/usecase/CreateOrderUseCaseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/order/OrderAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/order/OrderAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/order/jpa/entity/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/order/jpa/entity/OrderEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/order/rest/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/order/rest/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/orderLine/OrderLineAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/orderLine/OrderLineAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/orderLine/rest/request/CreateOrderLineRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/orderLine/rest/request/CreateOrderLineRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/product/ProductApiAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/product/ProductApiAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/domain/order/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/domain/order/model/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/domain/order/usecase/CreateOrderUseCaseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/domain/order/usecase/CreateOrderUseCaseHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/order/OrderAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/order/OrderAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/order/jpa/entity/OrderEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/order/jpa/entity/OrderEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/order/mapper/OrderToOrderResponseMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/order/mapper/OrderToOrderResponseMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/order/rest/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/order/rest/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/orderLine/OrderLineAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/orderLine/OrderLineAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/orderLine/rest/request/CreateOrderLineRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/orderLine/rest/request/CreateOrderLineRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/product/ProductApiAdapter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/product/ProductApiAdapter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/product/ProductApiAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/product/ProductApiAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/config/OrderDatasourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/config/OrderDatasourceConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/api/category/CategoryDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/api/category/CategoryToCategoryDtoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/api/product/ProductDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/api/product/ProductToProductDtoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/common.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/com/uc/domain/inventory/model/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/domain/inventory/model/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/com/uc/domain/inventory/port/InventoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/domain/inventory/port/InventoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/com/uc/domain/inventory/usecase/CreateInventoryUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/domain/inventory/usecase/CreateInventoryUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/com/uc/domain/inventory/usecase/CreateInventoryUseCaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/domain/inventory/usecase/CreateInventoryUseCaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/com/uc/domain/inventory/usecase/DecreaseInventoryUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/domain/inventory/usecase/DecreaseInventoryUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/com/uc/domain/inventory/usecase/DecreaseInventoryUseCaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/domain/inventory/usecase/DecreaseInventoryUseCaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/com/uc/domain/inventory/usecase/IncreaseInventoryUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/domain/inventory/usecase/IncreaseInventoryUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/com/uc/domain/inventory/usecase/IncreaseInventoryUseCaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/domain/inventory/usecase/IncreaseInventoryUseCaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/product/ProductApiAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/adapters/catalog/ProductApiAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/product/ProductApiAdapter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/adapters/product/ProductApiAdapter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderResponseMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineResponseMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +88,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/github_demo_projeler/java_examples",
+    "last_opened_file_path": "C:/github_demo_projeler/Hexagonal-and-modular-ecommerce-project/inventory/src/main/java/com/uc/inventory",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3954023",
@@ -106,11 +101,11 @@
       <recent name="com.uc.order.infra.adapters.order.rest.response" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\inventory\src\main\java\com\uc\inventory" />
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\inventory\src\main\java\com\uc\infra\adapters\config" />
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\inventory\src\main\java\com\uc\infra\adapters" />
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\inventory\src\main\java\com\uc\domain" />
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\order\src\main\java\com\uc\order\infra\adapters\orderLine\mapper" />
-      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\order\src\main\java\com\uc\order\infra\adapters\orderLine\rest\request" />
-      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\order\src\main\java\com\uc\domain\orderline" />
-      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project\product\src\main\java\com\uc\product\infra\adapter\category" />
-      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project\product\src\main\java\com\uc\product\domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project\category\src\main\java\com\uc\product\domain" />
@@ -124,11 +119,11 @@
       <recent name="com.uc.common" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.uc.infra.adapters.catalog" />
       <recent name="com.uc.common.config" />
       <recent name="com.uc.order.infra.adapters.order.jpa.entity" />
       <recent name="com.uc.order.domain.order.model" />
       <recent name="com.uc.order.infra.adapters.order.rest.response" />
-      <recent name="com.uc.catalog.common" />
     </key>
   </component>
   <component name="RunAnythingCache">

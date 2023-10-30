@@ -15,8 +15,6 @@
 	<description>Demo project for Spring Boot</description>
 
 	<dependencies>
-
-
 		<dependency>
 			<groupId>com.uc</groupId>
 			<artifactId>account</artifactId>
@@ -30,6 +28,11 @@
 		<dependency>
 			<groupId>com.uc</groupId>
 			<artifactId>order</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.uc</groupId>
+			<artifactId>inventory</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
