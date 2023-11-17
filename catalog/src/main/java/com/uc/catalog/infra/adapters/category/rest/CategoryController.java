@@ -10,6 +10,7 @@ import com.uc.common.usecase.NoUseCaseHandler;
 import com.uc.common.usecase.UseCaseHandler;
 import com.uc.common.usecase.VoidUseCaseHandler;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
