@@ -1,9 +1,9 @@
 version: '3.3'
 services:
-  db:
+  mysql:
     image: mysql:latest
     networks:
-      - restaurant
+      - ecommerce
     environment:
       MYSQL_USER: 'user'
       MYSQL_PASSWORD: '12345'
@@ -13,7 +13,38 @@ services:
     expose:
       - '3306'
     volumes:
-      - my-db:/var/lib/mysql
+      - mysql-db:/var/lib/mysql
+  postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-12345}
+      PGDATA: /data/postgres
+    volumes:
+      - postgres-db:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - ecommerce
+    restart: unless-stopped
+
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    networks:
+      - ecommerce
+    restart: unless-stopped
+
   cache:
     image: 'bitnami/redis:latest'
     ports:
@@ -23,6 +54,8 @@ services:
       - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
   zookeeper:
     image: confluentinc/cp-zookeeper:7.0.1
+    networks:
+      - ecommerce
     container_name: zookeeper
     ports:
       - "2181:2181"
@@ -31,6 +64,8 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
   broker:
     image: confluentinc/cp-kafka:7.0.1
+    networks:
+      - ecommerce
     container_name: broker
     ports:
       - "9092:9092"
@@ -45,6 +80,8 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
 volumes:
-  my-db:
+  mysql-db:
+  postgres-db:
+  pgadmin:
 networks:
-  restaurant:
+  ecommerce:

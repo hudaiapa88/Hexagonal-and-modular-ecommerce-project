@@ -1,13 +1,11 @@
-package com.uc.order.domain.order.usecase;
+package com.uc.inventory.domain.inventory.usecase;
 
 import com.uc.common.usecase.UseCase;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
-@Setter
 @AllArgsConstructor
-public class GetByOrderIdUseCase implements UseCase {
+public class GetInventoryByInventoryIdUseCase implements UseCase {
     private Long id;
 }

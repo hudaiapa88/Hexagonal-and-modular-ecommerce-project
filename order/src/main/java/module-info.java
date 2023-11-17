@@ -23,4 +23,7 @@ module order {
     requires org.hibernate.orm.core;
     requires jakarta.validation;
     requires com.fasterxml.jackson.databind;
+    requires spring.kafka;
+    requires spring.messaging;
+    requires kafka.clients;
 }

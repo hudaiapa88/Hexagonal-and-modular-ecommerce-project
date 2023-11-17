@@ -1,13 +1,12 @@
-package com.uc.catalog.domain.category.usecase;
+package com.uc.inventory.domain.inventory.usecase;
 
 import com.uc.common.usecase.UseCase;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
 @AllArgsConstructor
-public class GetByCategoryIdUseCase implements UseCase {
+@Getter
+public class DeleteInventoryUseCase implements UseCase {
     private Long id;
 }

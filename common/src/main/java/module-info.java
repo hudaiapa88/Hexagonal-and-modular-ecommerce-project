@@ -1,6 +1,7 @@
 open module common {
     requires org.mapstruct;
     requires lombok;
+    requires org.slf4j;
     requires spring.beans;
     requires spring.context;
     requires spring.web;
@@ -13,5 +14,6 @@ open module common {
     exports com.uc.common.rest.exception;
     exports com.uc.common.base;
     exports com.uc.common;
+    exports com.uc.common.event;
     exports com.uc.common.mapper;
 }

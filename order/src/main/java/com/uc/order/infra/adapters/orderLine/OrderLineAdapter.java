@@ -1,6 +1,6 @@
 package com.uc.order.infra.adapters.orderLine;
 
-import com.uc.order.domain.order.usecase.GetByOrderIdUseCase;
+import com.uc.order.domain.order.usecase.GetOrderByOrderIdUseCase;
 import com.uc.order.domain.orderline.model.OrderLine;
 import com.uc.order.domain.orderline.port.OrderLinePort;
 import com.uc.order.domain.orderline.usecase.DeleteOrderLineUseCase;
@@ -30,7 +30,7 @@ public class OrderLineAdapter implements OrderLinePort {
     }
 
     @Override
-    public List<OrderLine> getByOrderId(GetByOrderIdUseCase value) {
+    public List<OrderLine> getByOrderId(GetOrderByOrderIdUseCase value) {
         return orderLineEntityToOrderLineMapper.convertList(findByOrderId(value.getId()));
     }
 

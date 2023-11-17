@@ -4,6 +4,8 @@ import com.uc.common.DomainComponent;
 import com.uc.common.usecase.UseCaseHandler;
 import com.uc.order.domain.catalog.model.Product;
 import com.uc.order.domain.catalog.port.ProductPort;
+import com.uc.order.domain.inventory.event.DecreaseInventoryEvent;
+import com.uc.order.domain.inventory.port.DecreaseInventoryEventPort;
 import com.uc.order.domain.order.port.OrderPort;
 import com.uc.order.domain.orderline.model.OrderLine;
 import com.uc.order.domain.orderline.port.OrderLinePort;
@@ -22,6 +24,7 @@ public class CreateOrderLineUseCaseHandler implements UseCaseHandler<OrderLine,C
    private final OrderLinePort orderLinePort;
    private final OrderPort orderPort;
    private final ProductPort productPort;
+   private final DecreaseInventoryEventPort decreaseInventoryEventPort;
     @Override
     public OrderLine handle(CreateOrderLineUseCase value) {
         OrderLine orderLine= new OrderLine();
@@ -30,6 +33,8 @@ public class CreateOrderLineUseCaseHandler implements UseCaseHandler<OrderLine,C
         orderLine.setQuantity(value.getQuantity());
         Product product=productPort.getByProductId(value.getProductId());
         orderLine.setTotalPrice(new BigDecimal(value.getQuantity()).multiply(product.getPrice()));
-        return orderLinePort.save(orderLine);
+        orderLine=orderLinePort.save(orderLine);
+        decreaseInventoryEventPort.publish(DecreaseInventoryEvent.from(orderLine));
+        return orderLine;
     }
 }

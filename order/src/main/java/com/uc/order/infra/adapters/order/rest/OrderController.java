@@ -6,7 +6,7 @@ import com.uc.common.usecase.VoidUseCaseHandler;
 import com.uc.order.domain.order.model.Order;
 import com.uc.order.domain.order.usecase.CreateOrderUseCase;
 import com.uc.order.domain.order.usecase.DeleteOrderUseCase;
-import com.uc.order.domain.order.usecase.GetByOrderIdUseCase;
+import com.uc.order.domain.order.usecase.GetOrderByOrderIdUseCase;
 import com.uc.order.domain.order.usecase.UpdateOrderUseCase;
 import com.uc.order.infra.adapters.order.mapper.OrderToOrderResponseMapper;
 import com.uc.order.infra.adapters.order.rest.request.CreateOrderRequest;
@@ -29,11 +29,10 @@ public class OrderController {
     private final UseCaseHandler<Order, CreateOrderUseCase> createOrderUseCaseHandler;
     private final UseCaseHandler<Order, UpdateOrderUseCase> updateOrderUseCaseHandler;
     private final VoidUseCaseHandler<DeleteOrderUseCase> deleteOrderUseCaseHandler;
-    private final UseCaseHandler<Order, GetByOrderIdUseCase> getByOrderIdUseCaseHandler;
+    private final UseCaseHandler<Order, GetOrderByOrderIdUseCase> getByOrderIdUseCaseHandler;
     private final NoUseCaseHandler<List<Order>> getAllUseCase;
     private final OrderToOrderResponseMapper orderToOrderResponseMapper;
     @PostMapping
-
     public OrderResponse save(@Valid @RequestBody CreateOrderRequest createOrderRequest){
         return orderToOrderResponseMapper.convert(createOrderUseCaseHandler.handle(createOrderRequest.toUseCase()));
     }
@@ -48,7 +47,7 @@ public class OrderController {
     }
     @GetMapping("/{id}")
     public ResponseEntity<OrderResponse> getById(@PathVariable Long id){
-        return ResponseEntity.ok(orderToOrderResponseMapper.convert(getByOrderIdUseCaseHandler.handle(new GetByOrderIdUseCase(id))))  ;
+        return ResponseEntity.ok(orderToOrderResponseMapper.convert(getByOrderIdUseCaseHandler.handle(new GetOrderByOrderIdUseCase(id))))  ;
     }
 
    /* @GetMapping("/pageable")

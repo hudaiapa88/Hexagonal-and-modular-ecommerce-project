@@ -24,8 +24,10 @@ module com.uc.catalog {
     requires org.hibernate.orm.core;
     requires jakarta.persistence;
     requires jakarta.annotation;
-    requires jakarta.transaction ;
+    requires jakarta.transaction;
     requires jakarta.cdi;
+    requires spring.data.redis;
+    requires redis.clients.jedis;
     exports com.uc.catalog.api.category;
     exports com.uc.catalog.api.product;
 }

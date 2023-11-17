@@ -10,11 +10,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @DomainComponent
 @RequiredArgsConstructor
-public class GetByProductIdUseCaseHandler implements UseCaseHandler<Product,GetByProductIdUseCase> {
+public class GetProductByProductIdUseCaseHandler implements UseCaseHandler<Product, GetProductByProductIdUseCase> {
     private final ProductPort productPort;
 
     @Override
-    public Product handle(GetByProductIdUseCase value) {
+    public Product handle(GetProductByProductIdUseCase value) {
         return productPort.getById(value.getId());
     }
 }

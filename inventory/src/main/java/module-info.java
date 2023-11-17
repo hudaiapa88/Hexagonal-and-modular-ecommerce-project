@@ -27,4 +27,8 @@ module com.uc.inventory {
     requires jakarta.transaction ;
     requires jakarta.cdi;
     requires com.uc.catalog;
+    requires jakarta.validation;
+    requires spring.kafka;
+    requires spring.messaging;
+    requires kafka.clients;
 }

@@ -8,10 +8,10 @@ import lombok.RequiredArgsConstructor;
 
 @DomainComponent
 @RequiredArgsConstructor
-public class GetByOrderIdUseCaseHandler implements UseCaseHandler<Order,GetByOrderIdUseCase> {
+public class GetOrderByOrderIdUseCaseHandler implements UseCaseHandler<Order, GetOrderByOrderIdUseCase> {
     private final OrderPort orderPort;
     @Override
-    public Order handle(GetByOrderIdUseCase value) {
+    public Order handle(GetOrderByOrderIdUseCase value) {
         return orderPort.getByOrderId(value.getId());
     }
 }

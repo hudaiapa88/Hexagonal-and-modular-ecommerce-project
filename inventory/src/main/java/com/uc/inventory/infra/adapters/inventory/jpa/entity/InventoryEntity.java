@@ -20,7 +20,7 @@ public class InventoryEntity {
     )
     private Long id;
     private Long productId;
-    private Long quantity;
+    private Long amount;
 
 
 }

@@ -7,4 +7,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class IncreaseInventoryUseCase implements UseCase {
+    private Long id;
+    private Long amount;
 }

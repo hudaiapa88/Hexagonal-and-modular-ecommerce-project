@@ -3,7 +3,6 @@ package com.uc.catalog.domain.category.usecase;
 import com.uc.catalog.domain.category.model.Category;
 import com.uc.catalog.domain.category.port.CategoryPort;
 import com.uc.common.DomainComponent;
-import com.uc.common.usecase.UseCase;
 import com.uc.common.usecase.UseCaseHandler;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -11,11 +10,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @DomainComponent
 @RequiredArgsConstructor
-public class GetByCategoryIdUseCaseHandler implements UseCaseHandler<Category,GetByCategoryIdUseCase> {
+public class GetCategoryByCategoryIdUseCaseHandler implements UseCaseHandler<Category, GetCategoryByCategoryIdUseCase> {
     private final CategoryPort categoryPort;
 
     @Override
-    public Category handle(GetByCategoryIdUseCase value) {
+    public Category handle(GetCategoryByCategoryIdUseCase value) {
         return categoryPort.findById(value.getId());
     }
 }

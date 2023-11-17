@@ -1,7 +1,6 @@
 package com.uc.catalog.infra.adapters.category.rest;
 
 import com.uc.catalog.domain.category.model.Category;
-import com.uc.catalog.domain.category.port.CategoryPort;
 import com.uc.catalog.domain.category.usecase.*;
 import com.uc.catalog.infra.adapters.category.mapper.CategoryToCategoryResponseMapper;
 import com.uc.catalog.infra.adapters.category.rest.request.CreateCategoryRequest;
@@ -27,7 +26,7 @@ public class CategoryController {
     private final UseCaseHandler<Category, CreateCategoryUseCase> createCategoryRequestUseCaseHandler;
     private final UseCaseHandler<Category, UpdateCategoryUseCase> updateCategoryRequestUseCaseHandler;
     private final VoidUseCaseHandler<DeleteCategoryUseCase> deleteCategoryUseCaseVoidUseCaseHandler;
-    private final UseCaseHandler<Category, GetByCategoryIdUseCase> getByCategoryIdUseCaseVoidUseCaseHandler;
+    private final UseCaseHandler<Category, GetCategoryByCategoryIdUseCase> getByCategoryIdUseCaseVoidUseCaseHandler;
     private final NoUseCaseHandler<List<Category>> getAllCategoryUseCaseHandler;
     private final CategoryToCategoryResponseMapper categoryToCategoryResponseMapper;
 
@@ -42,7 +41,7 @@ public class CategoryController {
     }
     @GetMapping("/{id}")
     public ResponseEntity<CategoryResponse> getById(@PathVariable Long id){
-        return ResponseEntity.ok(categoryToCategoryResponseMapper.convert(getByCategoryIdUseCaseVoidUseCaseHandler.handle(new GetByCategoryIdUseCase(id))));
+        return ResponseEntity.ok(categoryToCategoryResponseMapper.convert(getByCategoryIdUseCaseVoidUseCaseHandler.handle(new GetCategoryByCategoryIdUseCase(id))));
     }
     @PutMapping("/{id}")
     public ResponseEntity<CategoryResponse> update(@PathVariable Long id, @RequestBody UpdateCategoryRequest updateCategoryRequest) {
