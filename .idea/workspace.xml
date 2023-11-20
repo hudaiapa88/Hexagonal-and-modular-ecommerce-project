@@ -5,10 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20239ab4-cf0e-4650-a4a6-945ac82f31f2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/category/elastic/model/CategoryElastic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/elastic/model/ProductElastic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/elastic/repository/ProductElasticRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/mapper/ProductElasticToProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/mapper/ProductToProductElasticMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/queue/SaveProductConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/rest/ProductElasticController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/config/CatalogElasticConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/config/CatalogRabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/resources/static/catalog-es-setting.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/category/CategoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/category/CategoryAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/category/rest/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/category/rest/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/config/CategoryRedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/config/CategoryRedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/ProductAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/ProductAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/resources/catalog.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/resources/catalog.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryEntityToInventoryMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryEntityToInventoryMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineResponseMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +42,8 @@
       <list>
         <option value="package-info" />
         <option value="module-info" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,18 +67,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/github_demo_projeler/docker",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3954023",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/github_demo_projeler/Hexagonal-and-modular-ecommerce-project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3954023&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.uc.inventory.infra.adapters.inventory.mapper" />
@@ -82,11 +104,11 @@
       <recent name="com.uc.common" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.uc.catalog.infra.adapters.product.elastic.model" />
       <recent name="com.uc.order.domain.inventory.port" />
       <recent name="com.uc.order.domain.inventory.model" />
       <recent name="com.uc.infra.adapters.catalog" />
       <recent name="com.uc.common.config" />
-      <recent name="com.uc.order.infra.adapters.order.jpa.entity" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -171,6 +193,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/queue/SaveProductConsumer.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">

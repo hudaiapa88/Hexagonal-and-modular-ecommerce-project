@@ -1,15 +1,17 @@
 package com.uc.catalog.infra.adapters.product;
 
-import com.uc.catalog.domain.category.model.Category;
 import com.uc.catalog.domain.product.model.Product;
 import com.uc.catalog.domain.product.port.ProductPort;
-import com.uc.catalog.domain.product.usecase.CreateProductUseCase;
 import com.uc.catalog.infra.adapters.product.jpa.entity.ProductEntity;
 import com.uc.catalog.infra.adapters.product.jpa.repository.ProductRepository;
 import com.uc.catalog.infra.adapters.product.mapper.ProductEntityToProductMapper;
 import com.uc.catalog.infra.adapters.product.mapper.ProductToProductEntityMapper;
 import com.uc.common.rest.exception.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.amqp.core.AmqpTemplate;
+import org.springframework.amqp.core.DirectExchange;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import jakarta.transaction.Transactional;
 
@@ -23,6 +25,12 @@ public class ProductAdapter implements ProductPort {
     private final ProductEntityToProductMapper productEntityToProductMapper;
     private final ProductToProductEntityMapper productToProductEntityMapper;
 
+    @Qualifier("saveProductExchange")
+    private final DirectExchange exchange;
+
+    @Value("${catalog.rabbitmq.routing-key}")
+    String routingKey;
+    private final AmqpTemplate rabbitTemplate;
     @Override
     public Product getById(Long id) {
        return productEntityToProductMapper.convert(findById(id));
@@ -36,7 +44,9 @@ public class ProductAdapter implements ProductPort {
     @Override
     public Product save(Product product) {
         ProductEntity productEntity=productRepository.save(productToProductEntityMapper.convert(product));
-        return productEntityToProductMapper.convert(productEntity);
+        product=productEntityToProductMapper.convert(productEntity);
+        rabbitTemplate.convertAndSend(exchange.getName(),routingKey,product);
+        return product;
     }
 
     @Override

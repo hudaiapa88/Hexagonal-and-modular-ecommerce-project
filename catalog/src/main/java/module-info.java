@@ -28,6 +28,9 @@ module com.uc.catalog {
     requires jakarta.cdi;
     requires spring.data.redis;
     requires redis.clients.jedis;
+    requires spring.data.elasticsearch;
+    requires spring.rabbit;
+    requires spring.amqp;
     exports com.uc.catalog.api.category;
     exports com.uc.catalog.api.product;
 }

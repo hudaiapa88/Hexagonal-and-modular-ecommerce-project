@@ -28,10 +28,7 @@ public class CategoryAdapter implements CategoryPort {
     private final CategoryToCategoryEntityMapper categoryToCategoryEntityMapper;
 
     @Override
-    @Caching(cacheable = {
-            @Cacheable(cacheManager = "categoryCacheManager")
-    }
-            , evict = {@CacheEvict(value = "categories", allEntries = true)})
+    @Caching( evict = {@CacheEvict(value = "categories", allEntries = true,cacheManager = "categoryCacheManager")})
     public Category save(Category category) {
         CategoryEntity categoryEntity = categoryRepository.save(categoryToCategoryEntityMapper.convert(category));
         return categoryEntityToCategoryMapper.convert(categoryEntity);
@@ -44,12 +41,9 @@ public class CategoryAdapter implements CategoryPort {
     }
 
     @Override
-    @Caching(cacheable = {
-            @Cacheable(cacheManager = "categoryCacheManager")
-    },
-            evict = {
-                    @CacheEvict(value = "category", key = "#id"),
-                    @CacheEvict(value = "categories", allEntries = true)
+    @Caching(   evict = {
+                    @CacheEvict(value = "category", key = "#id",cacheManager = "categoryCacheManager"),
+                    @CacheEvict(value = "categories", allEntries = true,cacheManager = "categoryCacheManager")
             }
     )
     public void delete(DeleteCategoryUseCase value) {

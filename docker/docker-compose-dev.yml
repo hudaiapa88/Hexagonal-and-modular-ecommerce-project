@@ -79,8 +79,38 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+
+  elasticsearch:
+    image: elasticsearch:8.8.0
+    environment:
+      - discovery.type=single-node
+      - validate_after_inactivity=0
+      - max_open_files=65536
+      - max_content_length_in_bytes=100000000
+      - transport.host=elasticsearch
+      - xpack.security.enabled=false
+    volumes:
+      - $HOME/app:/var/app
+    networks:
+      - ecommerce
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=12345
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - ecommerce
 volumes:
   mysql-db:
+  esdata1:
+    driver: local
   postgres-db:
   pgadmin:
 networks:
