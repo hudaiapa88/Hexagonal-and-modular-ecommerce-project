@@ -18,4 +18,6 @@ public interface ProductPort {
     PageData<Product> getByTitle(String title, PageableProperties pageableProperties);
     PageData<Product> getByCategoryTitle(String categoryTitle,PageableProperties pageableProperties);
     PageData<Product> getByPriceRange(BigDecimal minPrice,BigDecimal maxPrice, PageableProperties pageableProperties);
+
+    List<String> getAutoComplete(String input);
 }

@@ -20,6 +20,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;
+import java.util.List;
 
 @RestController
 @RequestMapping("product")
@@ -36,7 +37,7 @@ public class ProductController {
     private final UseCaseHandler<PageData<Product>, GetProductByTitlePageUseCase> getProductByTitleUseCaseUseCaseHandler;
     private final UseCaseHandler<PageData<Product>, GetProductByCategoryTitlePageUseCase> getProductByCategoryTitleUseCaseUseCaseHandler;
     private final UseCaseHandler<PageData<Product>, GetProductByPriceRangePageUseCase> getProductByPriceRangeUseCaseUseCaseHandler;
-
+    private final UseCaseHandler<List<String>, ProductAutocompleteUseCase> productAutocompleteUseCaseUseCaseHandler;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
@@ -71,7 +72,10 @@ public class ProductController {
     public ResponseEntity<PageData<ProductResponse>> getByCategoryTitle(@PathVariable("title") String title,@Parameter(hidden = true)PageableProperties pageable) {
         return ResponseEntity.ok(productToProductResponseMapper.convertPage(getProductByCategoryTitleUseCaseUseCaseHandler.handle(new GetProductByCategoryTitlePageUseCase(title,pageable))));
     }
-
+    @GetMapping("/autocomplete/input/{input}")
+    public ResponseEntity<List<String>> getAutocomplete(@PathVariable("input") String input) {
+        return ResponseEntity.ok(productAutocompleteUseCaseUseCaseHandler.handle(new ProductAutocompleteUseCase(input)));
+    }
     @GetMapping("/price-range")
     @PageableAsQueryParam
     public ResponseEntity<PageData<ProductResponse>> getByPriceRange(@RequestParam("min") Long min, @RequestParam("max") Long max,@Parameter(hidden = true)PageableProperties pageable) {

@@ -125,6 +125,11 @@ public class ProductAdapter implements ProductPort {
         return productPageData;
     }
 
+    @Override
+    public List<String> getAutoComplete(String input) {
+        return productElasticRepository.customAutocompleteSearch(input,PageRequest.of(0,20)).getContent().stream().map(productElastic -> productElastic.getTitle()).collect(Collectors.toList());
+    }
+
     private ProductEntity findById(Long id) {
         return productRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Ürün bulunamadı"));
     }
