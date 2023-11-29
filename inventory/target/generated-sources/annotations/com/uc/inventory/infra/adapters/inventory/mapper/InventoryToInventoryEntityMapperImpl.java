@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 /*
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-11-20T01:04:58+0300",
+    date = "2023-11-29T13:01:21+0300",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.3 (Amazon.com Inc.)"
 )
 */
@@ -17,28 +17,28 @@ import org.springframework.stereotype.Component;
 public class InventoryToInventoryEntityMapperImpl implements InventoryToInventoryEntityMapper {
 
     @Override
-    public InventoryEntity convert(Inventory entity) {
-        if ( entity == null ) {
+    public InventoryEntity convert(Inventory input) {
+        if ( input == null ) {
             return null;
         }
 
         InventoryEntity inventoryEntity = new InventoryEntity();
 
-        inventoryEntity.setId( entity.getId() );
-        inventoryEntity.setProductId( entity.getProductId() );
-        inventoryEntity.setAmount( entity.getAmount() );
+        inventoryEntity.setId( input.getId() );
+        inventoryEntity.setProductId( input.getProductId() );
+        inventoryEntity.setAmount( input.getAmount() );
 
         return inventoryEntity;
     }
 
     @Override
-    public List<InventoryEntity> convertList(List<Inventory> entityList) {
-        if ( entityList == null ) {
+    public List<InventoryEntity> convertList(List<Inventory> inputList) {
+        if ( inputList == null ) {
             return null;
         }
 
-        List<InventoryEntity> list = new ArrayList<InventoryEntity>( entityList.size() );
-        for ( Inventory inventory : entityList ) {
+        List<InventoryEntity> list = new ArrayList<InventoryEntity>( inputList.size() );
+        for ( Inventory inventory : inputList ) {
             list.add( convert( inventory ) );
         }
 

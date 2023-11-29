@@ -31,6 +31,10 @@ module com.uc.catalog {
     requires spring.data.elasticsearch;
     requires spring.rabbit;
     requires spring.amqp;
+    requires elasticsearch.java;
+    requires io.swagger.v3.oas.annotations;
+    requires io.swagger.v3.core;
+    requires org.springdoc.openapi.common;
     exports com.uc.catalog.api.category;
     exports com.uc.catalog.api.product;
 }

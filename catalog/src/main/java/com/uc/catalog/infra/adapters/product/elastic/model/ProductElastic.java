@@ -19,14 +19,14 @@ import java.math.BigDecimal;
 @Setter
 @Document(indexName = "products_index")
 @Setting(settingPath = "static/catalog-es-setting.json")
-@JsonIgnoreProperties(ignoreUnknown = true)
+//@JsonIgnoreProperties(ignoreUnknown = true)
 public class ProductElastic {
 
     @Id
     private Long id;
-    @Field(name = "title", type = FieldType.Text, analyzer = "custom_index", searchAnalyzer = "custom_search")
+    @Field(name = "title", type = FieldType.Text,fielddata = true)
     private String title;
-    @Field(name = "category", type = FieldType.Object)
+    @Field(name = "category", type = FieldType.Nested,includeInParent = true, analyzer = "custom_analyzer")
     private CategoryElastic category;
     @Field(name = "price", type = FieldType.Double)
     private Double price;

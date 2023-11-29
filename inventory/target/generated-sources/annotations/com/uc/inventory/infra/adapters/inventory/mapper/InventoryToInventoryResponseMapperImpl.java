@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 /*
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-11-20T01:04:58+0300",
+    date = "2023-11-29T13:01:21+0300",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.3 (Amazon.com Inc.)"
 )
 */
@@ -17,28 +17,28 @@ import org.springframework.stereotype.Component;
 public class InventoryToInventoryResponseMapperImpl implements InventoryToInventoryResponseMapper {
 
     @Override
-    public InventoryResponse convert(Inventory entity) {
-        if ( entity == null ) {
+    public InventoryResponse convert(Inventory input) {
+        if ( input == null ) {
             return null;
         }
 
         InventoryResponse inventoryResponse = new InventoryResponse();
 
-        inventoryResponse.setId( entity.getId() );
-        inventoryResponse.setProductId( entity.getProductId() );
-        inventoryResponse.setAmount( entity.getAmount() );
+        inventoryResponse.setId( input.getId() );
+        inventoryResponse.setProductId( input.getProductId() );
+        inventoryResponse.setAmount( input.getAmount() );
 
         return inventoryResponse;
     }
 
     @Override
-    public List<InventoryResponse> convertList(List<Inventory> entityList) {
-        if ( entityList == null ) {
+    public List<InventoryResponse> convertList(List<Inventory> inputList) {
+        if ( inputList == null ) {
             return null;
         }
 
-        List<InventoryResponse> list = new ArrayList<InventoryResponse>( entityList.size() );
-        for ( Inventory inventory : entityList ) {
+        List<InventoryResponse> list = new ArrayList<InventoryResponse>( inputList.size() );
+        for ( Inventory inventory : inputList ) {
             list.add( convert( inventory ) );
         }
 

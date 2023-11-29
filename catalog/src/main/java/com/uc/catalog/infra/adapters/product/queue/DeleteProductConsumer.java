@@ -10,14 +10,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class SaveProductConsumer {
+public class DeleteProductConsumer {
     private final ProductElasticRepository productElasticRepository;
-    private final ProductToProductElasticMapper productToProductElasticMapper;
-
-    @RabbitListener(queues = "${catalog.rabbitmq.save-product-queue}")
-    void consume(Product product){
-        ProductElastic productElastic=productToProductElasticMapper.convert(product);
-        productElasticRepository.save(productElastic);
+    @RabbitListener(queues = "${catalog.rabbitmq.delete-product-queue}")
+    void consume(Long productId){
+        productElasticRepository.deleteById(productId);
     }
-
 }

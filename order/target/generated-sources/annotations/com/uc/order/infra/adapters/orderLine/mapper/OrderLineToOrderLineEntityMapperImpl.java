@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 /*
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-11-20T01:04:54+0300",
+    date = "2023-11-29T13:00:39+0300",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.3 (Amazon.com Inc.)"
 )
 */
@@ -21,30 +21,30 @@ import org.springframework.stereotype.Component;
 public class OrderLineToOrderLineEntityMapperImpl implements OrderLineToOrderLineEntityMapper {
 
     @Override
-    public OrderLineEntity convert(OrderLine entity) {
-        if ( entity == null ) {
+    public OrderLineEntity convert(OrderLine input) {
+        if ( input == null ) {
             return null;
         }
 
         OrderLineEntity orderLineEntity = new OrderLineEntity();
 
-        orderLineEntity.setId( entity.getId() );
-        orderLineEntity.setQuantity( entity.getQuantity() );
-        orderLineEntity.setProductId( entity.getProductId() );
-        orderLineEntity.setTotalPrice( entity.getTotalPrice() );
-        orderLineEntity.setOrder( orderToOrderEntity( entity.getOrder() ) );
+        orderLineEntity.setId( input.getId() );
+        orderLineEntity.setQuantity( input.getQuantity() );
+        orderLineEntity.setProductId( input.getProductId() );
+        orderLineEntity.setTotalPrice( input.getTotalPrice() );
+        orderLineEntity.setOrder( orderToOrderEntity( input.getOrder() ) );
 
         return orderLineEntity;
     }
 
     @Override
-    public List<OrderLineEntity> convertList(List<OrderLine> entityList) {
-        if ( entityList == null ) {
+    public List<OrderLineEntity> convertList(List<OrderLine> inputList) {
+        if ( inputList == null ) {
             return null;
         }
 
-        List<OrderLineEntity> list = new ArrayList<OrderLineEntity>( entityList.size() );
-        for ( OrderLine orderLine : entityList ) {
+        List<OrderLineEntity> list = new ArrayList<OrderLineEntity>( inputList.size() );
+        for ( OrderLine orderLine : inputList ) {
             list.add( convert( orderLine ) );
         }
 

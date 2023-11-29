@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 /*
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-11-20T01:04:54+0300",
+    date = "2023-11-29T13:00:39+0300",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.3 (Amazon.com Inc.)"
 )
 */
@@ -19,27 +19,27 @@ import org.springframework.stereotype.Component;
 public class OrderToOrderResponseMapperImpl implements OrderToOrderResponseMapper {
 
     @Override
-    public OrderResponse convert(Order entity) {
-        if ( entity == null ) {
+    public OrderResponse convert(Order input) {
+        if ( input == null ) {
             return null;
         }
 
         OrderResponse orderResponse = new OrderResponse();
 
-        orderResponse.setTotalPrice( entity.getTotalPrice() );
-        orderResponse.setAddress( addressToAddressResponse( entity.getAddress() ) );
+        orderResponse.setTotalPrice( input.getTotalPrice() );
+        orderResponse.setAddress( addressToAddressResponse( input.getAddress() ) );
 
         return orderResponse;
     }
 
     @Override
-    public List<OrderResponse> convertList(List<Order> entityList) {
-        if ( entityList == null ) {
+    public List<OrderResponse> convertList(List<Order> inputList) {
+        if ( inputList == null ) {
             return null;
         }
 
-        List<OrderResponse> list = new ArrayList<OrderResponse>( entityList.size() );
-        for ( Order order : entityList ) {
+        List<OrderResponse> list = new ArrayList<OrderResponse>( inputList.size() );
+        for ( Order order : inputList ) {
             list.add( convert( order ) );
         }
 

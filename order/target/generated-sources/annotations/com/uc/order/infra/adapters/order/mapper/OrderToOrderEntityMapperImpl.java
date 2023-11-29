@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 /*
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-11-20T01:04:54+0300",
+    date = "2023-11-29T13:00:39+0300",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.3 (Amazon.com Inc.)"
 )
 */
@@ -19,30 +19,30 @@ import org.springframework.stereotype.Component;
 public class OrderToOrderEntityMapperImpl implements OrderToOrderEntityMapper {
 
     @Override
-    public OrderEntity convert(Order entity) {
-        if ( entity == null ) {
+    public OrderEntity convert(Order input) {
+        if ( input == null ) {
             return null;
         }
 
         OrderEntity orderEntity = new OrderEntity();
 
-        orderEntity.setId( entity.getId() );
-        orderEntity.setCreatedDateTime( entity.getCreatedDateTime() );
-        orderEntity.setUpdatedDateTime( entity.getUpdatedDateTime() );
-        orderEntity.setAddress( addressToAddressEntity( entity.getAddress() ) );
-        orderEntity.setTotalPrice( entity.getTotalPrice() );
+        orderEntity.setId( input.getId() );
+        orderEntity.setCreatedDateTime( input.getCreatedDateTime() );
+        orderEntity.setUpdatedDateTime( input.getUpdatedDateTime() );
+        orderEntity.setAddress( addressToAddressEntity( input.getAddress() ) );
+        orderEntity.setTotalPrice( input.getTotalPrice() );
 
         return orderEntity;
     }
 
     @Override
-    public List<OrderEntity> convertList(List<Order> entityList) {
-        if ( entityList == null ) {
+    public List<OrderEntity> convertList(List<Order> inputList) {
+        if ( inputList == null ) {
             return null;
         }
 
-        List<OrderEntity> list = new ArrayList<OrderEntity>( entityList.size() );
-        for ( Order order : entityList ) {
+        List<OrderEntity> list = new ArrayList<OrderEntity>( inputList.size() );
+        for ( Order order : inputList ) {
             list.add( convert( order ) );
         }
 

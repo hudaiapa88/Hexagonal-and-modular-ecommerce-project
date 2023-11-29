@@ -9,11 +9,14 @@ open module common {
     requires spring.core;
     requires spring.boot.starter.web;
     requires io.swagger.v3.oas.annotations;
+    requires org.springdoc.openapi.webmvc.core;
+    requires org.springdoc.openapi.common;
     requires io.swagger.v3.oas.models;
     exports com.uc.common.usecase;
     exports com.uc.common.rest.exception;
     exports com.uc.common.base;
     exports com.uc.common;
+    exports com.uc.common.page;
     exports com.uc.common.event;
     exports com.uc.common.mapper;
 }

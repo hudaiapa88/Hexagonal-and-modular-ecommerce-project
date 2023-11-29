@@ -24,18 +24,23 @@ import org.springframework.amqp.core.Queue;
 @Getter
 @Setter
 public class CatalogRabbitMqConfig {
-    
+
     private String host;
     private int port;
     private String username;
     private String password;
 
-   private String exchange;
-   private String queueName;
-   private  String routingKey;
+    private String exchange;
+    private String saveProductQueue;
+    private String saveProductRoutingKey;
+    private String updateProductQueue;
+    private String updateProductRoutingKey;
+    private String deleteProductQueue;
+    private String deleteProductRoutingKey;
+
     @Bean("catalogRabbitMqConnectionFactory")
     public CachingConnectionFactory connectionFactory() {
-        CachingConnectionFactory connectionFactory= new CachingConnectionFactory();
+        CachingConnectionFactory connectionFactory = new CachingConnectionFactory();
         connectionFactory.setHost(host);
         connectionFactory.setPort(port);
         connectionFactory.setUsername(username);
@@ -47,27 +52,51 @@ public class CatalogRabbitMqConfig {
     public RabbitAdmin productRabbitMqAdmin(@Qualifier("catalogRabbitMqConnectionFactory") ConnectionFactory connectionFactory) {
         return new RabbitAdmin(connectionFactory());
     }
+
     @Bean
-    public RabbitTemplate rabbitTemplate() {
+    public RabbitTemplate catalogRabbitTemplate() {
         RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory());
         rabbitTemplate.setMessageConverter(jsonMessageConverter());
         return rabbitTemplate;
     }
-    @Bean("saveProductExchange")
+
+    @Bean("productExchange")
     DirectExchange saveProductExchange() {
         return new DirectExchange(exchange);
     }
+
     @Bean("saveProductQueue")
     public Queue saveProductQueue() {
-        return new Queue(queueName);
+        return new Queue(saveProductQueue);
+    }
+
+    @Bean("saveProductBinding")
+    Binding saveProductBinding(@Qualifier("saveProductQueue") Queue saveProductQueue, @Qualifier("productExchange") DirectExchange exchange) {
+        return BindingBuilder.bind(saveProductQueue).to(exchange).with(saveProductRoutingKey);
+    }
+
+    @Bean("updateProductQueue")
+    public Queue updateProductQueue() {
+        return new Queue(updateProductQueue);
+    }
+
+    @Bean("updateProductBinding")
+    Binding updateProductBinding(@Qualifier("updateProductQueue") Queue updateProductQueue, @Qualifier("productExchange") DirectExchange exchange) {
+        return BindingBuilder.bind(updateProductQueue).to(exchange).with(updateProductRoutingKey);
+    }
+
+    @Bean("deleteProductQueue")
+    public Queue deleteProductQueue() {
+        return new Queue(deleteProductQueue);
+    }
+
+    @Bean("deleteProductBinding")
+    Binding binding(@Qualifier("deleteProductQueue") Queue deleteProductQueue, @Qualifier("productExchange") DirectExchange exchange) {
+        return BindingBuilder.bind(deleteProductQueue).to(exchange).with(deleteProductRoutingKey);
     }
 
     @Bean
-    Binding binding(@Qualifier("saveProductQueue") Queue saveProductQueue,@Qualifier("saveProductExchange") DirectExchange exchange){
-        return BindingBuilder.bind(saveProductQueue).to(exchange).with(routingKey);
-    }
-    @Bean
-    public MessageConverter jsonMessageConverter(){
+    public MessageConverter jsonMessageConverter() {
         return new Jackson2JsonMessageConverter();
     }
 
