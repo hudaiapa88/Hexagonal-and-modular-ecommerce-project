@@ -15,6 +15,7 @@ module com.uc.application {
     requires jakarta.persistence;
     requires lombok;
     requires common;
+    requires spring.boot.docker.compose;
     opens com.uc.application;
     opens com.uc.application.config;
 }

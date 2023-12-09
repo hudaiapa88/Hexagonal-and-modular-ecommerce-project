@@ -1,10 +1,10 @@
-name: ecommerce-dev-container
+name: ecommerce-prod-container
 services:
-  ech-dev-mysql:
-    image: mysql:ladev
-    container_name: ech-dev-mysql
+  ech-prod-mysql:
+    image: mysql:laprod
+    container_name: ech-prod-mysql
     networks:
-      - ech-dev-ecommerce
+      - ech-prod-ecommerce
     environment:
       MYSQL_USER: 'user'
       MYSQL_PASSWORD: '12345'
@@ -14,9 +14,9 @@ services:
     expose:
       - '3306'
     volumes:
-      - ech-dev-mysql-db:/var/lib/mysql
-  ech-dev-postgres:
-    container_name: ech-dev-postgres
+      - ech-prod-mysql-db:/var/lib/mysql
+  ech-prod-postgres:
+    container_name: ech-prod-postgres
     image: postgres
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
@@ -24,15 +24,15 @@ services:
       POSTGRES_DB: order
       PGDATA: /data/postgres
     volumes:
-      - ech-dev-postgres-db:/data/postgres
+      - ech-prod-postgres-db:/data/postgres
     ports:
       - "5432:5432"
     networks:
-      - ech-dev-ecommerce
+      - ech-prod-ecommerce
     restart: unless-stopped
 
-  ech-dev-pgadmin:
-    container_name: ech-dev-pgadmin
+  ech-prod-pgadmin:
+    container_name: ech-prod-pgadmin
     image: dpage/pgadmin4
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
@@ -44,47 +44,47 @@ services:
     ports:
       - "${PGADMIN_PORT:-5050}:80"
     networks:
-      - ech-dev-ecommerce
+      - ech-prod-ecommerce
     restart: unless-stopped
 
-  ech-dev-redis-cache:
-    image: 'bitnami/redis:ladev'
-    container_name: ech-dev-redis-cache
+  ech-prod-redis-cache:
+    image: 'bitnami/redis:laprod'
+    container_name: ech-prod-redis-cache
     ports:
       - "6379:6379"
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
-  ech-dev-zookeeper:
+  ech-prod-zookeeper:
     image: confluentinc/cp-zookeeper:7.0.1
     networks:
-      - ech-dev-ecommerce
-    container_name: ech-dev-zookeeper
+      - ech-prod-ecommerce
+    container_name: ech-prod-zookeeper
     ports:
       - "2181:2181"
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
-  ech-dev-broker:
+  ech-prod-broker:
     image: confluentinc/cp-kafka:7.0.1
     networks:
-      - ech-dev-ecommerce
-    container_name: ech-dev-broker
+      - ech-prod-ecommerce
+    container_name: ech-prod-broker
     ports:
       - "9092:9092"
     depends_on:
-      - ech-dev-zookeeper
+      - ech-prod-zookeeper
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://ech-dev-broker:29092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://ech-prod-broker:29092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
 
-  ech-dev-elasticsearch:
-    container_name: ech-dev-elasticsearch
+  ech-prod-elasticsearch:
+    container_name: ech-prod-elasticsearch
     image: elasticsearch:8.9.0
     environment:
       - discovery.type=single-node
@@ -96,27 +96,27 @@ services:
     volumes:
       - $HOME/app:/var/app
     networks:
-      - ech-dev-ecommerce
+      - ech-prod-ecommerce
     ports:
       - "9200:9200"
       - "9300:9300"
 
-  ech-dev-kibana:
-    container_name: ech-dev-kibana
+  ech-prod-kibana:
+    container_name: ech-prod-kibana
     image: docker.elastic.co/kibana/kibana:8.9.0
     restart: always
     environment:
-      - ELASTICSEARCH_HOSTS=http://ech-dev-elasticsearch:9200    # address of elasticsearch docker container which kibana will connect
+      - ELASTICSEARCH_HOSTS=http://ech-prod-elasticsearch:9200    # address of elasticsearch docker container which kibana will connect
     ports:
       - 5601:5601
     depends_on:
-      - ech-dev-elasticsearch
+      - ech-prod-elasticsearch
     networks:
-      - ech-dev-ecommerce
+      - ech-prod-ecommerce
 
-  ech-dev-rabbitmq:
+  ech-prod-rabbitmq:
     image: rabbitmq:management
-    container_name: ech-dev-rabbitmq
+    container_name: ech-prod-rabbitmq
     environment:
       - RABBITMQ_DEFAULT_USER=admin
       - RABBITMQ_DEFAULT_PASS=12345
@@ -124,12 +124,12 @@ services:
       - "5672:5672"
       - "15672:15672"
     networks:
-      - ech-dev-ecommerce
+      - ech-prod-ecommerce
 volumes:
-  ech-dev-mysql-db:
-  ech-dev-esdata:
+  ech-prod-mysql-db:
+  ech-prod-esdata:
     driver: local
-  ech-dev-postgres-db:
+  ech-prod-postgres-db:
   pgadmin:
 networks:
-  ech-dev-ecommerce:
+  ech-prod-ecommerce:
