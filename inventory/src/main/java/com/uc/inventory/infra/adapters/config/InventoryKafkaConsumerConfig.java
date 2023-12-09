@@ -43,7 +43,7 @@ public class InventoryKafkaConsumerConfig {
         if (nonNull(inventoryKafkaProperties.getConsumer())) {
             KafkaProperties.Consumer consumerProperties = inventoryKafkaProperties.getConsumer().get(consumerName);
             if (nonNull(consumerProperties)) {
-                properties.putAll(consumerProperties.buildProperties());
+                properties.putAll(consumerProperties.getProperties());
             }
 
         }

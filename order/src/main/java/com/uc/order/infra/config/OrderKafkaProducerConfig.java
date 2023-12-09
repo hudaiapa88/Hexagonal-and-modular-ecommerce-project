@@ -1,7 +1,5 @@
 package com.uc.order.infra.config;
 
-
-import com.uc.order.domain.inventory.event.DecreaseInventoryEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -33,7 +31,7 @@ public class OrderKafkaProducerConfig {
         if (nonNull(orderKafkaProperties.getProducer())) {
             KafkaProperties.Producer producerProperties = orderKafkaProperties.getProducer().get(producerName);
             if (nonNull(producerProperties)) {
-                properties.putAll(producerProperties.buildProperties());
+                properties.putAll(producerProperties.getProperties());
             }
         }
         log.info("Kafka Producer '{}' properties: {}", producerName, properties);

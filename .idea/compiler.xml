@@ -19,8 +19,8 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
         </processorPath>
         <module name="application" />
-        <module name="shipping" />
         <module name="common" />
+        <module name="shipping" />
         <module name="catalog" />
         <module name="payment" />
         <module name="inventory" />
@@ -45,6 +45,7 @@
       <module name="category" options="-parameters" />
       <module name="category (1)" options="-parameters" />
       <module name="common" options="-parameters" />
+      <module name="ecommerce" options="-parameters" />
       <module name="inventory" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="payment" options="-parameters" />

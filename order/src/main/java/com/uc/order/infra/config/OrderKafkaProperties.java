@@ -3,7 +3,9 @@ package com.uc.order.infra.config;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
+import org.springframework.boot.autoconfigure.kafka.SslBundleSslEngineFactory;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.ssl.DefaultSslBundleRegistry;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.support.serializer.JsonSerializer;
 import org.springframework.util.CollectionUtils;
@@ -33,16 +35,17 @@ public class OrderKafkaProperties {
         if (this.clientId != null) {
             properties.put(CommonClientConfigs.CLIENT_ID_CONFIG, this.clientId);
         }
-        properties.putAll(this.ssl.buildProperties());
+
+       // properties.putAll(this.ssl.buildProperties());
         properties.putAll(this.security.buildProperties());
         if (Optional.ofNullable(this.producer).isPresent()) {
             for (Map.Entry<String, KafkaProperties.Producer> p : this.producer.entrySet()) {
-                properties.putAll(p.getValue().buildProperties());
+                properties.putAll(p.getValue().getProperties());
             }
         }
         if (Optional.ofNullable(this.consumer).isPresent()) {
             for (Map.Entry<String, KafkaProperties.Consumer> c : this.consumer.entrySet()) {
-                properties.putAll(c.getValue().buildProperties());
+                properties.putAll(c.getValue().getProperties());
             }
         }
 

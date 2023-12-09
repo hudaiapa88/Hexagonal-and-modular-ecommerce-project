@@ -5,12 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20239ab4-cf0e-4650-a4a6-945ac82f31f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/domain/product/usecase/ProductAutoCompleteUseCaseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/domain/product/usecase/ProductAutocompleteUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/domain/product/port/ProductPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/domain/product/port/ProductPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/ProductAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/ProductAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/elastic/repository/ProductElasticRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/elastic/repository/ProductElasticRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/rest/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/rest/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/resources/catalog-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/resources/catalog-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/uc/application/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/uc/application/config/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/config/CatalogConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/config/CatalogConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/resources/catalog.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/resources/catalog.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/inventory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/inventory.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/infra/adapters/config/InventoryKafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/infra/adapters/config/InventoryKafkaConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/infra/adapters/config/InventoryKafkaProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/com/uc/inventory/infra/adapters/config/InventoryKafkaProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/target/classes/com/uc/inventory/infra/adapters/config/InventoryKafkaConsumerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/classes/com/uc/inventory/infra/adapters/config/InventoryKafkaConsumerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/target/classes/com/uc/inventory/infra/adapters/config/InventoryKafkaProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/classes/com/uc/inventory/infra/adapters/config/InventoryKafkaProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryEntityToInventoryMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryEntityToInventoryMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/order/order.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/config/OrderKafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/config/OrderKafkaProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/config/OrderKafkaProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/config/OrderKafkaProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/config/OrderKafkaProducerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/config/OrderKafkaProducerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/config/OrderKafkaProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/config/OrderKafkaProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/payment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/payment/payment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shipping/shipping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shipping/shipping.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,28 +63,33 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2GUxe55DHlsE3ILI7AUkXw4VjYj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/github_demo_projeler/Hexagonal-and-modular-ecommerce-project&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3954023&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.com.uc.application.Application.executor": "Debug",
+    "Docker.docker/docker-compose-dev.yml: Compose Deployment.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/github_demo_projeler/modulith",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3954023",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.uc.inventory.infra.adapters.inventory.mapper" />
@@ -73,11 +104,11 @@
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\inventory\src\main\java\com\uc\domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\catalog\src\main\resources" />
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project\category\src\main\java\com\uc\product\domain" />
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project\docker" />
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project\application" />
       <recent name="C:\uranuscode project\cafe\application" />
-      <recent name="C:\uranuscode project\cafe\account\src\main\java\com\uc\account" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.uc.category" />
@@ -165,6 +196,13 @@
         <item itemvalue="Application.com.uc.product.infra.adapter.category.CategoryAdapter" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-8336523bb0d9-93b19daf" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
