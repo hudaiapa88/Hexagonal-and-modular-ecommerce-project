@@ -1,4 +1,4 @@
-name: ecommerce-dev-container
+name: ech-dev-container
 services:
   ech-test-mysql:
     image: mysql:latest

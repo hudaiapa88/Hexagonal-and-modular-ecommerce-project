@@ -1,7 +1,7 @@
-name: ecommerce-dev-container
+name: ech-dev-container
 services:
   ech-dev-mysql:
-    image: mysql:ladev
+    image: mysql:8.2
     container_name: ech-dev-mysql
     networks:
       - ech-dev-ecommerce
@@ -13,6 +13,8 @@ services:
       - '3306:3306'
     expose:
       - '3306'
+    labels:
+      org.springframework.boot.ignore: true
     volumes:
       - ech-dev-mysql-db:/var/lib/mysql
   ech-dev-postgres:
@@ -30,6 +32,8 @@ services:
     networks:
       - ech-dev-ecommerce
     restart: unless-stopped
+    labels:
+      org.springframework.boot.ignore: true
 
   ech-dev-pgadmin:
     container_name: ech-dev-pgadmin
@@ -48,7 +52,7 @@ services:
     restart: unless-stopped
 
   ech-dev-redis-cache:
-    image: 'bitnami/redis:ladev'
+    image: bitnami/redis
     container_name: ech-dev-redis-cache
     ports:
       - "6379:6379"
@@ -76,7 +80,7 @@ services:
       - ech-dev-zookeeper
     environment:
       KAFKA_BROKER_ID: 1
-      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_ZOOKEEPER_CONNECT: 'ech-dev-zookeeper:2181'
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://ech-dev-broker:29092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
@@ -91,7 +95,7 @@ services:
       - validate_after_inactivity=0
       - max_open_files=65536
       - max_content_length_in_bytes=100000000
-      - transport.host=elasticsearch
+      - transport.host=ech-dev-elasticsearch
       - xpack.security.enabled=false
     volumes:
       - $HOME/app:/var/app

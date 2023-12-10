@@ -1,4 +1,4 @@
-name: ecommerce-prod-container
+name: ech-prod-container
 services:
   ech-prod-mysql:
     image: mysql:laprod
