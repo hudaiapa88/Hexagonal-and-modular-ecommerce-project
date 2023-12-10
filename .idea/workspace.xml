@@ -5,28 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20239ab4-cf0e-4650-a4a6-945ac82f31f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/resources/application-prod.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/docker-compose-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/docker-compose-test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/uc/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/uc/application/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/main/java/com/uc/application/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/uc/application/config/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/resources/app.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryEntityToInventoryMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryEntityToInventoryMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryEntityMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryResponseMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderResponseMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineResponseMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/itg_hiring_challenge/e-commerce/e-commerce-monolith/backend",
+    "last_opened_file_path": "C:/github_demo_projeler/Hexagonal-and-modular-ecommerce-project",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3954023",

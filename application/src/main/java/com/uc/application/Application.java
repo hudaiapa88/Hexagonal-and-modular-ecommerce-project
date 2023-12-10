@@ -12,7 +12,6 @@ import org.springframework.context.annotation.FilterType;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
-
 @SpringBootApplication(exclude = SecurityAutoConfiguration.class,scanBasePackages ="com.uc" )
 @ComponentScan(
 		basePackages =
