@@ -17,16 +17,18 @@ services:
       org.springframework.boot.ignore: true
     volumes:
       - ech-dev-mysql-db:/var/lib/mysql
+
   ech-dev-postgres:
     container_name: ech-dev-postgres
-    image: postgres
+    image: postgres:16.1
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-12345}
-      POSTGRES_DB: order
+      POSTGRES_DB: order_db
       PGDATA: /data/postgres
     volumes:
       - ech-dev-postgres-db:/data/postgres
+      - ./postgres/init.sh:/docker-entrypoint-initdb.d/init.sh
     ports:
       - "5432:5432"
     networks:

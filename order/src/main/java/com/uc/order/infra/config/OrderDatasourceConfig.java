@@ -53,7 +53,7 @@ public class OrderDatasourceConfig {
     }
 
     @Bean(name = "orderTransactionManager")
-    @ConfigurationProperties("spring.jpa")
+    @ConfigurationProperties("order.jpa")
     public PlatformTransactionManager transactionManager(
             @Qualifier("orderEntityManagerFactory") EntityManagerFactory entityManagerFactory) {
 

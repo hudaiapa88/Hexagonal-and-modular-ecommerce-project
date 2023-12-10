@@ -5,12 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20239ab4-cf0e-4650-a4a6-945ac82f31f2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/uc/application/ResponseSpec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/uc/application/RestAssuredExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/uc/application/rest/PingControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/postgres/init.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/postgres/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/com/uc/application/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/com/uc/application/ApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/docker-compose-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/docker-compose-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryEntityToInventoryMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryEntityToInventoryMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/config/OrderDatasourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/config/OrderDatasourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/resources/order-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/resources/order-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/config/OrderDatasourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/config/OrderDatasourceConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/classes/order-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/order-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineResponseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +74,7 @@
   "keyToString": {
     "Application.com.uc.application.Application.executor": "Debug",
     "Docker.docker/docker-compose-dev.yml: Compose Deployment.executor": "Run",
+    "JUnit.PingControllerTest.executor": "Debug",
     "Maven.ecommerce [clean].executor": "Run",
     "Maven.ecommerce [compile].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -80,22 +102,22 @@
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\inventory\src\main\java\com\uc\infra\adapters" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\docker\postgres" />
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project" />
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\application" />
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\catalog\src\main\resources" />
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project\category\src\main\java\com\uc\product\domain" />
-      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project\docker" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.uc.category" />
       <recent name="com.uc.common" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.uc.application" />
       <recent name="com.uc.catalog.infra.adapters.product.elastic.model" />
       <recent name="com.uc.order.domain.inventory.port" />
       <recent name="com.uc.order.domain.inventory.model" />
       <recent name="com.uc.infra.adapters.catalog" />
-      <recent name="com.uc.common.config" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -107,13 +129,13 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.com.uc.application.Application">
-    <configuration name="com.uc.application.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PingControllerTest">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.uc.application.Application" />
       <module name="application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.uc.application.*" />
+          <option name="PATTERN" value="com.uc.application.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,15 +143,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.uc.product.infra.adapter.category.CategoryAdapter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.uc.product.infra.adapter.category.CategoryAdapter" />
-      <module name="category" />
+    <configuration name="PingControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.uc.product.infra.adapters.category.*" />
+          <option name="PATTERN" value="com.uc.application.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.uc.application.rest" />
+      <option name="MAIN_CLASS_NAME" value="com.uc.application.rest.PingControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PingControllerTest" />
         <item itemvalue="Application.com.uc.application.Application" />
         <item itemvalue="Docker.docker/docker-compose-dev.yml: Compose Deployment" />
         <item itemvalue="Docker.docker/docker-compose-dev.yml.postgres: Compose Deployment" />
         <item itemvalue="Docker.docker/docker-compose-kafka.yml: Compose Deployment" />
-        <item itemvalue="Application.com.uc.product.infra.adapter.category.CategoryAdapter" />
       </list>
     </recent_temporary>
   </component>

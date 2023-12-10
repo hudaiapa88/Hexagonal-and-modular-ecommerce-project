@@ -1,7 +1,7 @@
-name: ech-dev-container
+name: ech-test-container
 services:
   ech-test-mysql:
-    image: mysql:latest
+    image: mysql:8.2
     container_name: ech-test-mysql
     networks:
       - ech-test-ecommerce
@@ -13,23 +13,29 @@ services:
       - '3306:3306'
     expose:
       - '3306'
+    labels:
+      org.springframework.boot.ignore: true
     volumes:
       - ech-test-mysql-db:/var/lib/mysql
+
   ech-test-postgres:
     container_name: ech-test-postgres
-    image: postgres
+    image: postgres:16.1
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-12345}
-      POSTGRES_DB: order
+      POSTGRES_DB: order_db
       PGDATA: /data/postgres
     volumes:
       - ech-test-postgres-db:/data/postgres
+      - ./postgres/init.sh:/docker-entrypoint-initdb.d/init.sh
     ports:
       - "5432:5432"
     networks:
       - ech-test-ecommerce
     restart: unless-stopped
+    labels:
+      org.springframework.boot.ignore: true
 
   ech-test-pgadmin:
     container_name: ech-test-pgadmin
@@ -48,7 +54,7 @@ services:
     restart: unless-stopped
 
   ech-test-redis-cache:
-    image: 'bitnami/redis:latest'
+    image: bitnami/redis
     container_name: ech-test-redis-cache
     ports:
       - "6379:6379"
@@ -76,7 +82,7 @@ services:
       - ech-test-zookeeper
     environment:
       KAFKA_BROKER_ID: 1
-      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_ZOOKEEPER_CONNECT: 'ech-test-zookeeper:2181'
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://ech-test-broker:29092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
@@ -91,7 +97,7 @@ services:
       - validate_after_inactivity=0
       - max_open_files=65536
       - max_content_length_in_bytes=100000000
-      - transport.host=elasticsearch
+      - transport.host=ech-test-elasticsearch
       - xpack.security.enabled=false
     volumes:
       - $HOME/app:/var/app
