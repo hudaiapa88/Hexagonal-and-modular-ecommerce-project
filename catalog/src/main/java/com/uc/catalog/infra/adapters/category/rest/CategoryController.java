@@ -33,8 +33,8 @@ public class CategoryController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<CategoryResponse> create(@RequestBody CreateCategoryRequest createCategoryRequest) {
-        return ResponseEntity.ok(categoryToCategoryResponseMapper.convert(createCategoryRequestUseCaseHandler.handle(createCategoryRequest.toUseCase())));
+    public CategoryResponse create(@RequestBody CreateCategoryRequest createCategoryRequest) {
+        return categoryToCategoryResponseMapper.convert(createCategoryRequestUseCaseHandler.handle(createCategoryRequest.toUseCase()));
     }
     @GetMapping
     public ResponseEntity<List<CategoryResponse>> getAll(){

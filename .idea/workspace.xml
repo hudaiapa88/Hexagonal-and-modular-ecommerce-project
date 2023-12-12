@@ -5,25 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20239ab4-cf0e-4650-a4a6-945ac82f31f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/uc/application/ResponseSpec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/uc/application/RestAssuredExtension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/uc/application/rest/PingControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/resources/application-test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/postgres/init.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/postgres/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/uc/application/IT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/uc/application/TestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/uc/application/TestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/resources/app-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/main/resources/catalog-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/test/java/com/uc/catalog/IT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/test/java/com/uc/catalog/ResponseSpec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/test/java/com/uc/catalog/RestAssuredExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/test/java/com/uc/catalog/TestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/test/java/com/uc/catalog/TestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/test/java/com/uc/catalog/rest/category/CategoryControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/test/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/main/resources/inventory-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/src/test/resources/inventory-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/resources/order-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/test/resources/order-test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/uc/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/uc/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/com/uc/application/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/com/uc/application/ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/com/uc/application/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/test/java/com/uc/catalog/PlatformTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/com/uc/application/rest/PingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/com/uc/application/rest/PingControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/category/rest/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/category/rest/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/rest/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/adapters/product/rest/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/config/CatalogDatasourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/uc/catalog/infra/config/CatalogDatasourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/resources/catalog-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/resources/catalog-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/test/java/com/uc/product/ProductApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryEntityToInventoryMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryEntityToInventoryMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryEntityMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/generated-sources/annotations/com/uc/inventory/infra/adapters/inventory/mapper/InventoryToInventoryResponseMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/config/OrderDatasourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/uc/order/infra/config/OrderDatasourceConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/main/resources/order-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/resources/order-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/config/OrderDatasourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/uc/order/infra/config/OrderDatasourceConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/target/classes/order-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/order-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderEntityToOrderMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/order/mapper/OrderToOrderEntityMapperImpl.java" afterDir="false" />
@@ -31,7 +50,6 @@
       <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineEntityToOrderLineMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineEntityMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineResponseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/generated-sources/annotations/com/uc/order/infra/adapters/orderLine/mapper/OrderLineToOrderLineResponseMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +60,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="module-info" />
         <option value="Interface" />
+        <option value="module-info" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -72,16 +91,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Application.executor": "Debug",
+    "Application.TestApplication.executor": "Debug",
+    "Application.TestCatalogApplication.executor": "Debug",
     "Application.com.uc.application.Application.executor": "Debug",
     "Docker.docker/docker-compose-dev.yml: Compose Deployment.executor": "Run",
+    "JUnit.All in application.executor": "Debug",
+    "JUnit.CatalogApplicationTests.executor": "Debug",
+    "JUnit.CategoryControllerTest.executor": "Debug",
     "JUnit.PingControllerTest.executor": "Debug",
+    "JUnit.java in catalog.executor": "Debug",
     "Maven.ecommerce [clean].executor": "Run",
     "Maven.ecommerce [compile].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/github_demo_projeler/Hexagonal-and-modular-ecommerce-project",
+    "last_opened_file_path": "C:/github_demo_projeler/Hexagonal-and-modular-ecommerce-project/catalog/src/test/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3954023",
@@ -95,29 +121,30 @@
       <recent name="com.uc.order.infra.adapters.order.rest.response" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project" />
-      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\common\src\main\java\com\uc\common\usecase" />
-      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\inventory\src\main\java\com\uc\inventory" />
-      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\inventory\src\main\java\com\uc\infra\adapters\config" />
-      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\inventory\src\main\java\com\uc\infra\adapters" />
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\catalog\src\test\resources" />
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\catalog\src\test\java\com\uc\catalog" />
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\order\src\main\resources" />
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\inventory\src\main\resources" />
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\catalog\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\catalog\src\main\java\com\uc\catalog" />
+      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\catalog" />
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\docker\postgres" />
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project" />
       <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\application" />
-      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-ecommerce-project\catalog\src\main\resources" />
-      <recent name="C:\github_demo_projeler\Hexagonal-and-modular-restourant-project\category\src\main\java\com\uc\product\domain" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.uc.catalog" />
       <recent name="com.uc.category" />
       <recent name="com.uc.common" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.uc.catalog" />
       <recent name="com.uc.application" />
       <recent name="com.uc.catalog.infra.adapters.product.elastic.model" />
       <recent name="com.uc.order.domain.inventory.port" />
       <recent name="com.uc.order.domain.inventory.model" />
-      <recent name="com.uc.infra.adapters.catalog" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -129,16 +156,59 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PingControllerTest">
+  <component name="RunManager" selected="JUnit.CategoryControllerTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.uc.application.Application" />
       <module name="application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.uc.application.rest.*" />
+          <option name="PATTERN" value="com.uc.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.uc.application.TestApplication" />
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uc.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CatalogApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="catalog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uc.catalog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.uc.catalog" />
+      <option name="MAIN_CLASS_NAME" value="com.uc.catalog.CatalogApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="catalog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uc.catalog.rest.category.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.uc.catalog.rest.category" />
+      <option name="MAIN_CLASS_NAME" value="com.uc.catalog.rest.category.CategoryControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,42 +228,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker/docker-compose-dev.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker/docker-compose-dev.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker/docker-compose-dev.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="postgres" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker/docker-compose-dev.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker/docker-compose-kafka.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker/docker-compose-kafka.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CategoryControllerTest" />
         <item itemvalue="JUnit.PingControllerTest" />
-        <item itemvalue="Application.com.uc.application.Application" />
-        <item itemvalue="Docker.docker/docker-compose-dev.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker/docker-compose-dev.yml.postgres: Compose Deployment" />
-        <item itemvalue="Docker.docker/docker-compose-kafka.yml: Compose Deployment" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.TestApplication" />
+        <item itemvalue="JUnit.CatalogApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -225,6 +266,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/catalog/src/test/java/com/uc/catalog/rest/category/CategoryControllerTest.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">

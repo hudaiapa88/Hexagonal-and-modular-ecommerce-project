@@ -33,7 +33,6 @@ public class ProductController {
     private final UseCaseHandler<Product, GetProductByProductIdUseCase> getProductByProductIdUseCaseUseCaseHandler;
     private final   UseCaseHandler<PageData<Product>,GetAllProductPageUseCase> getAllProductPageUseCaseUseCaseHandler;
     private final VoidUseCaseHandler<DeleteProductUseCase> deleteProductUseCaseVoidUseCaseHandler;
-
     private final UseCaseHandler<PageData<Product>, GetProductByTitlePageUseCase> getProductByTitleUseCaseUseCaseHandler;
     private final UseCaseHandler<PageData<Product>, GetProductByCategoryTitlePageUseCase> getProductByCategoryTitleUseCaseUseCaseHandler;
     private final UseCaseHandler<PageData<Product>, GetProductByPriceRangePageUseCase> getProductByPriceRangeUseCaseUseCaseHandler;

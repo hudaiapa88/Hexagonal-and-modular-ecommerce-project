@@ -1,4 +1,4 @@
-module com.uc.application {
+open module com.uc.application {
     requires spring.core;
     requires spring.context;
     requires spring.boot;
@@ -16,6 +16,4 @@ module com.uc.application {
     requires lombok;
     requires common;
     requires spring.boot.docker.compose;
-    opens com.uc.application;
-    opens com.uc.application.config;
 }

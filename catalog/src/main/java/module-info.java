@@ -1,4 +1,4 @@
-module com.uc.catalog {
+  open module com.uc.catalog {
     requires lombok;
     requires common;
     requires spring.boot;
@@ -37,4 +37,7 @@ module com.uc.catalog {
     requires org.springdoc.openapi.common;
     exports com.uc.catalog.api.category;
     exports com.uc.catalog.api.product;
+ /*   exports com.uc.catalog.infra.adapters.category.jpa.repository to  catalog;
+    exports com.uc.catalog.infra.adapters.category.rest.request to  catalog;
+    exports com.uc.catalog.infra.adapters.category.rest.response to  catalog;*/
 }
