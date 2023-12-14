@@ -1,4 +1,4 @@
-  open module com.uc.catalog {
+open module com.uc.catalog {
     requires lombok;
     requires common;
     requires spring.boot;
@@ -13,9 +13,6 @@
     requires spring.web;
     requires spring.data.jpa;
     requires spring.tx;
-/*    requires jakarta.persistence;
-    requires jakarta.transaction;
-    requires jakarta.annotation;*/
     requires com.fasterxml.jackson.databind;
     requires java.sql;
     requires com.zaxxer.hikari;
@@ -37,7 +34,11 @@
     requires org.springdoc.openapi.common;
     exports com.uc.catalog.api.category;
     exports com.uc.catalog.api.product;
- /*   exports com.uc.catalog.infra.adapters.category.jpa.repository to  catalog;
-    exports com.uc.catalog.infra.adapters.category.rest.request to  catalog;
-    exports com.uc.catalog.infra.adapters.category.rest.response to  catalog;*/
+    exports com.uc.catalog.infra.adapters.category.jpa.repository;
+    exports com.uc.catalog.infra.adapters.category.jpa.entity;
+    exports com.uc.catalog.infra.adapters.product.jpa.repository;
+    exports com.uc.catalog.infra.adapters.product.jpa.entity;
+    exports com.uc.catalog.infra.adapters.category.rest.request;
+    exports com.uc.catalog.infra.adapters.category.rest.response;
+
 }

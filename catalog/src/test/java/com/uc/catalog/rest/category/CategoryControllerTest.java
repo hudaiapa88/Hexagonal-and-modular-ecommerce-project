@@ -1,7 +1,5 @@
 package com.uc.catalog.rest.category;
 
-
-
 import com.uc.catalog.IT;
 import com.uc.catalog.ResponseSpec;
 import com.uc.catalog.infra.adapters.category.jpa.repository.CategoryRepository;

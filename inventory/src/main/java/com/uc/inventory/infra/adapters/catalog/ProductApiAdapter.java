@@ -26,6 +26,7 @@ public class ProductApiAdapter implements ProductPort {
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
+
     }
 
     @Override
