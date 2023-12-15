@@ -34,11 +34,5 @@ open module com.uc.catalog {
     requires org.springdoc.openapi.common;
     exports com.uc.catalog.api.category;
     exports com.uc.catalog.api.product;
-    exports com.uc.catalog.infra.adapters.category.jpa.repository;
-    exports com.uc.catalog.infra.adapters.category.jpa.entity;
-    exports com.uc.catalog.infra.adapters.product.jpa.repository;
-    exports com.uc.catalog.infra.adapters.product.jpa.entity;
-    exports com.uc.catalog.infra.adapters.category.rest.request;
-    exports com.uc.catalog.infra.adapters.category.rest.response;
 
 }

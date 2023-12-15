@@ -1,4 +1,4 @@
-package com.uc.catalog.rest.category;
+package com.uc.catalog.integration.category;
 
 import com.uc.catalog.IT;
 import com.uc.catalog.ResponseSpec;

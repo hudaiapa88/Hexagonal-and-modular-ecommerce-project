@@ -1,4 +1,4 @@
-module com.uc.inventory {
+open module com.uc.inventory {
     requires lombok;
     requires common;
     requires spring.boot;
