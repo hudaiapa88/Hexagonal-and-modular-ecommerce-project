@@ -1,6 +1,6 @@
 package com.uc.order.infra.adapters.order.rest.request;
 
-import com.uc.common.usecase.UseCase;
+import  com.uc.order.domain.common.usecase.UseCase;
 import com.uc.order.domain.order.usecase.CreateOrderUseCase;
 import com.uc.order.infra.adapters.orderLine.rest.request.CreateOrderLineRequest;
 import jakarta.validation.Valid;

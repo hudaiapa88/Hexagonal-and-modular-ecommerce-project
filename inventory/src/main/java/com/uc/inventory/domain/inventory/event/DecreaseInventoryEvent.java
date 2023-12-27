@@ -1,6 +1,6 @@
 package com.uc.inventory.domain.inventory.event;
 
-import com.uc.common.event.Event;
+import com.uc.inventory.domain.common.event.Event;
 import com.uc.inventory.domain.inventory.usecase.DecreaseInventoryUseCase;
 import lombok.Getter;
 import lombok.Setter;

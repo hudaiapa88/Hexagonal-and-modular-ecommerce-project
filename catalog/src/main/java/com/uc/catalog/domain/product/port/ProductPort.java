@@ -1,8 +1,9 @@
 package com.uc.catalog.domain.product.port;
 
+import com.uc.catalog.domain.common.page.PageData;
+import com.uc.catalog.domain.common.page.PageableProperties;
 import com.uc.catalog.domain.product.model.Product;
-import com.uc.common.page.PageData;
-import com.uc.common.page.PageableProperties;
+
 
 import java.math.BigDecimal;
 import java.util.List;

@@ -1,9 +1,9 @@
 package com.uc.inventory.infra.adapters.inventory.rest;
 
 
-import com.uc.common.usecase.NoUseCaseHandler;
-import com.uc.common.usecase.UseCaseHandler;
-import com.uc.common.usecase.VoidUseCaseHandler;
+import com.uc.inventory.domain.common.usecase.NoUseCaseHandler;
+import  com.uc.inventory.domain.common.usecase.UseCaseHandler;;
+import com.uc.inventory.domain.common.usecase.VoidUseCaseHandler;
 import com.uc.inventory.domain.inventory.model.Inventory;
 import com.uc.inventory.domain.inventory.usecase.*;
 import com.uc.inventory.infra.adapters.inventory.mapper.InventoryToInventoryResponseMapper;

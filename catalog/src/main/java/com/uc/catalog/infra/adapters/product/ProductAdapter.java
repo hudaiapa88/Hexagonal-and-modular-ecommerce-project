@@ -1,5 +1,8 @@
 package com.uc.catalog.infra.adapters.product;
 
+import com.uc.catalog.domain.common.exception.EntityNotFoundException;
+import com.uc.catalog.domain.common.page.PageData;
+import com.uc.catalog.domain.common.page.PageableProperties;
 import com.uc.catalog.domain.product.model.Product;
 import com.uc.catalog.domain.product.port.ProductPort;
 import com.uc.catalog.infra.adapters.product.elastic.model.ProductElastic;
@@ -11,9 +14,6 @@ import com.uc.catalog.infra.adapters.product.mapper.ProductEntityToProductMapper
 import com.uc.catalog.infra.adapters.product.mapper.ProductToProductElasticMapper;
 import com.uc.catalog.infra.adapters.product.mapper.ProductToProductEntityMapper;
 import com.uc.catalog.infra.util.elastic.ESUtil;
-import com.uc.common.page.PageData;
-import com.uc.common.page.PageableProperties;
-import com.uc.common.rest.exception.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.amqp.core.DirectExchange;

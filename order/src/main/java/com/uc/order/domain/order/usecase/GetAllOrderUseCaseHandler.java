@@ -1,7 +1,7 @@
 package com.uc.order.domain.order.usecase;
 
-import com.uc.common.DomainComponent;
-import com.uc.common.usecase.NoUseCaseHandler;
+import  com.uc.order.domain.common.DomainComponent;
+import com.uc.order.domain.common.usecase.NoUseCaseHandler;
 import com.uc.order.domain.order.model.Order;
 import com.uc.order.domain.order.port.OrderPort;
 import lombok.RequiredArgsConstructor;

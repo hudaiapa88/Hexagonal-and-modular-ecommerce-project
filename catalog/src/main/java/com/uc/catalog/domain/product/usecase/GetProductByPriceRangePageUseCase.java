@@ -1,7 +1,8 @@
 package com.uc.catalog.domain.product.usecase;
 
-import com.uc.common.page.PageableProperties;
-import com.uc.common.usecase.UseCase;
+
+import com.uc.catalog.domain.common.page.PageableProperties;
+import  com.uc.catalog.domain.common.usecase.UseCase;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

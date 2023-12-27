@@ -1,7 +1,7 @@
 package com.uc.catalog.infra.config;
 
-import com.uc.common.page.PageableProperties;
-import org.springdoc.core.utils.SpringDocUtils;
+
+import com.uc.catalog.domain.common.DomainComponent;
 import org.springframework.context.annotation.*;
 
 @Configuration
@@ -9,6 +9,13 @@ import org.springframework.context.annotation.*;
         @PropertySource("classpath:catalog.properties"),
         @PropertySource(value = "classpath:/catalog-${spring.profiles.active}.properties", ignoreResourceNotFound = true)
 })
+@ComponentScan(
+        basePackages =
+                "com.uc",
+        includeFilters = {
+                @ComponentScan.Filter(type = FilterType.ANNOTATION, value = {DomainComponent.class})
+        }
+)
 public class CatalogConfig {
 
 }

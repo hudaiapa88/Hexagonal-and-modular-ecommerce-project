@@ -1,8 +1,8 @@
 package com.uc.order.infra.adapters.order.mapper;
 
-import com.uc.common.mapper.BaseMapper;
 import com.uc.order.domain.order.model.Order;
 import com.uc.order.infra.adapters.order.jpa.entity.OrderEntity;
+import com.uc.order.infra.common.mapper.BaseMapper;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

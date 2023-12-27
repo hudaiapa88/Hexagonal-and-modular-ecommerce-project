@@ -11,7 +11,6 @@
     <modules>
         <module>application</module>
         <module>account</module>
-        <module>common</module>
         <module>catalog</module>
         <module>inventory</module>
         <module>order</module>
@@ -36,6 +35,7 @@
         <io.rest-assured-test>5.3.2</io.rest-assured-test>
         <junit.jupiter.version>5.1.1</junit.jupiter.version>
         <assertj.core.version>3.9.1</assertj.core.version>
+        <spring-modulith.version>1.1.0</spring-modulith.version>
     </properties>
     <dependencies>
         <dependency>
@@ -85,7 +85,25 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-docker-compose</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>1.5.3.Final</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.tngtech.archunit</groupId>
+            <artifactId>archunit-junit5</artifactId>
+            <version>1.2.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
     <build>
         <plugins>
 

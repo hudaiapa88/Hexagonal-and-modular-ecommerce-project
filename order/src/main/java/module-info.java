@@ -1,6 +1,5 @@
 module order {
     requires lombok;
-    requires common;
     requires spring.boot;
     requires spring.core;
     requires com.zaxxer.hikari;
@@ -26,4 +25,8 @@ module order {
     requires spring.kafka;
     requires spring.messaging;
     requires kafka.clients;
+    requires io.swagger.v3.oas.annotations;
+    requires org.springdoc.openapi.webmvc.core;
+    requires org.springdoc.openapi.common;
+    requires io.swagger.v3.oas.models;
 }

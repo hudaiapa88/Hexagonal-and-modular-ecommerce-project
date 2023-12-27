@@ -1,20 +1,17 @@
 package com.uc.catalog.infra.adapters.product.rest;
 
+import com.uc.catalog.domain.common.page.PageData;
+import com.uc.catalog.domain.common.page.PageableProperties;
+import com.uc.catalog.domain.common.usecase.VoidUseCaseHandler;
 import com.uc.catalog.domain.product.model.Product;
 import com.uc.catalog.domain.product.usecase.*;
 import com.uc.catalog.infra.adapters.product.rest.request.CreateProductRequest;
 import com.uc.catalog.infra.adapters.product.mapper.ProductToProductResponseMapper;
 import com.uc.catalog.infra.adapters.product.rest.response.ProductResponse;
-import com.uc.common.page.PageData;
-import com.uc.common.page.PageableProperties;
-import com.uc.common.usecase.UseCaseHandler;
-import com.uc.common.usecase.VoidUseCaseHandler;
+import  com.uc.catalog.domain.common.usecase.UseCaseHandler;;
 import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.Parameters;
 import lombok.RequiredArgsConstructor;
-import org.springdoc.core.annotations.ParameterObject;
 import org.springdoc.core.converters.models.PageableAsQueryParam;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;

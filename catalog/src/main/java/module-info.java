@@ -1,6 +1,5 @@
 open module com.uc.catalog {
     requires lombok;
-    requires common;
     requires spring.boot;
     requires spring.core;
     requires spring.boot.autoconfigure;
@@ -30,9 +29,11 @@ open module com.uc.catalog {
     requires spring.amqp;
     requires elasticsearch.java;
     requires io.swagger.v3.oas.annotations;
-    requires io.swagger.v3.core;
+    requires org.springdoc.openapi.webmvc.core;
     requires org.springdoc.openapi.common;
+    requires io.swagger.v3.oas.models;
     exports com.uc.catalog.api.category;
     exports com.uc.catalog.api.product;
+
 
 }

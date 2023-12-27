@@ -2,13 +2,13 @@ package com.uc.catalog.infra.adapters.category.rest;
 
 import com.uc.catalog.domain.category.model.Category;
 import com.uc.catalog.domain.category.usecase.*;
+import com.uc.catalog.domain.common.usecase.NoUseCaseHandler;
+import com.uc.catalog.domain.common.usecase.VoidUseCaseHandler;
 import com.uc.catalog.infra.adapters.category.mapper.CategoryToCategoryResponseMapper;
 import com.uc.catalog.infra.adapters.category.rest.request.CreateCategoryRequest;
 import com.uc.catalog.infra.adapters.category.rest.request.UpdateCategoryRequest;
 import com.uc.catalog.infra.adapters.category.rest.response.CategoryResponse;
-import com.uc.common.usecase.NoUseCaseHandler;
-import com.uc.common.usecase.UseCaseHandler;
-import com.uc.common.usecase.VoidUseCaseHandler;
+import  com.uc.catalog.domain.common.usecase.UseCaseHandler;;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;

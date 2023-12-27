@@ -1,7 +1,7 @@
 package com.uc.inventory.infra.adapters.inventory;
 
 
-import com.uc.common.rest.exception.EntityNotFoundException;
+import com.uc.inventory.domain.common.exception.EntityNotFoundException;
 import com.uc.inventory.domain.inventory.model.Inventory;
 import com.uc.inventory.domain.inventory.port.InventoryPort;
 import com.uc.inventory.domain.inventory.usecase.DeleteInventoryUseCase;

@@ -14,6 +14,9 @@ open module com.uc.application {
     requires spring.data.jpa;
     requires jakarta.persistence;
     requires lombok;
-    requires common;
     requires spring.boot.docker.compose;
+    requires io.swagger.v3.oas.annotations;
+    requires org.springdoc.openapi.webmvc.core;
+    requires org.springdoc.openapi.common;
+    requires io.swagger.v3.oas.models;
 }

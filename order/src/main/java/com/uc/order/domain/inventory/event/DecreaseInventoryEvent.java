@@ -1,6 +1,7 @@
 package com.uc.order.domain.inventory.event;
 
-import com.uc.common.event.Event;
+
+import com.uc.order.domain.common.event.Event;
 import com.uc.order.domain.orderline.model.OrderLine;
 import lombok.Getter;
 import lombok.Setter;

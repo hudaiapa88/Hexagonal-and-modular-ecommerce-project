@@ -1,17 +1,15 @@
 package com.uc.order.infra.adapters.order;
 
-import com.uc.common.rest.exception.EntityNotFoundException;
+import com.uc.order.domain.common.exception.EntityNotFoundException;
 import com.uc.order.domain.order.model.Order;
 import com.uc.order.domain.order.port.OrderPort;
 import com.uc.order.domain.order.usecase.DeleteOrderUseCase;
-import com.uc.order.domain.orderline.port.OrderLinePort;
 import com.uc.order.infra.adapters.order.jpa.entity.OrderEntity;
 import com.uc.order.infra.adapters.order.jpa.repository.OrderRepository;
 import com.uc.order.infra.adapters.order.mapper.OrderEntityToOrderMapper;
 import com.uc.order.infra.adapters.order.mapper.OrderToOrderEntityMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 

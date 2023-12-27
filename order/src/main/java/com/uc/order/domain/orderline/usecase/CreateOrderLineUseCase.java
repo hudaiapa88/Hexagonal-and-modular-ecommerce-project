@@ -1,6 +1,6 @@
 package com.uc.order.domain.orderline.usecase;
 
-import com.uc.common.usecase.UseCase;
+import  com.uc.order.domain.common.usecase.UseCase;
 import lombok.Getter;
 import lombok.Setter;
 

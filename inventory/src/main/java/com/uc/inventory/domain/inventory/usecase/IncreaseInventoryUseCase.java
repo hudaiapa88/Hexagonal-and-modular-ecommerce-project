@@ -1,6 +1,6 @@
 package com.uc.inventory.domain.inventory.usecase;
 
-import com.uc.common.usecase.UseCase;
+import  com.uc.inventory.domain.common.usecase.UseCase;
 import lombok.Getter;
 import lombok.Setter;
 

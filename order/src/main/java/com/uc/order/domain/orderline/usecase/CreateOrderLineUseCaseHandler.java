@@ -1,7 +1,7 @@
 package com.uc.order.domain.orderline.usecase;
 
-import com.uc.common.DomainComponent;
-import com.uc.common.usecase.UseCaseHandler;
+import  com.uc.order.domain.common.DomainComponent;
+import  com.uc.order.domain.common.usecase.UseCaseHandler;;
 import com.uc.order.domain.catalog.model.Product;
 import com.uc.order.domain.catalog.port.ProductPort;
 import com.uc.order.domain.inventory.event.DecreaseInventoryEvent;

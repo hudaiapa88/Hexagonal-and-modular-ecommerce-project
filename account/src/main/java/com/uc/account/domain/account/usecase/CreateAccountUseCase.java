@@ -1,7 +1,7 @@
 package com.uc.account.domain.account.usecase;
 
 import com.uc.account.domain.account.model.Phone;
-import com.uc.common.usecase.UseCase;
+import com.uc.account.domain.common.usecase.UseCase;
 import lombok.Getter;
 import lombok.Setter;
 

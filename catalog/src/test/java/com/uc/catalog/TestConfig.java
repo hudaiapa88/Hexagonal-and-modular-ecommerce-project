@@ -1,7 +1,7 @@
 package com.uc.catalog;
 
 
-import com.uc.common.DomainComponent;
+import  com.uc.catalog.domain.common.DomainComponent;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;

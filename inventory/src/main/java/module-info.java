@@ -1,6 +1,5 @@
 open module com.uc.inventory {
     requires lombok;
-    requires common;
     requires spring.boot;
     requires spring.core;
     requires spring.boot.autoconfigure;
@@ -31,4 +30,8 @@ open module com.uc.inventory {
     requires spring.kafka;
     requires spring.messaging;
     requires kafka.clients;
+    requires io.swagger.v3.oas.annotations;
+    requires org.springdoc.openapi.webmvc.core;
+    requires org.springdoc.openapi.common;
+    requires io.swagger.v3.oas.models;
 }

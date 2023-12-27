@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.uc.catalog.domain.category.model.Category;
 import com.uc.catalog.domain.category.usecase.GetCategoryByCategoryIdUseCase;
-import com.uc.common.usecase.UseCaseHandler;
+import com.uc.catalog.domain.common.usecase.UseCaseHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

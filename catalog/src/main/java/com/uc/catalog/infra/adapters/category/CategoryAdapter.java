@@ -1,9 +1,9 @@
 package com.uc.catalog.infra.adapters.category;
 
 
+import com.uc.catalog.domain.common.exception.EntityNotFoundException;
 import com.uc.catalog.infra.adapters.category.jpa.entity.CategoryEntity;
 import com.uc.catalog.infra.adapters.category.mapper.CategoryToCategoryEntityMapper;
-import com.uc.common.rest.exception.EntityNotFoundException;
 import com.uc.catalog.domain.category.model.Category;
 import com.uc.catalog.domain.category.port.CategoryPort;
 import com.uc.catalog.domain.category.usecase.DeleteCategoryUseCase;
@@ -12,10 +12,6 @@ import com.uc.catalog.infra.adapters.category.mapper.CategoryEntityToCategoryMap
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.annotation.*;
 import org.springframework.stereotype.Service;
-import jakarta.transaction.Transactional;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 
 import java.util.List;
 

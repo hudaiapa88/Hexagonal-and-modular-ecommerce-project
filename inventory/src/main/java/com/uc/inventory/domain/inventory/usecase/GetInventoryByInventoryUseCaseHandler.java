@@ -1,7 +1,7 @@
 package com.uc.inventory.domain.inventory.usecase;
 
-import com.uc.common.DomainComponent;
-import com.uc.common.usecase.UseCaseHandler;
+import  com.uc.inventory.domain.common.DomainComponent;
+import  com.uc.inventory.domain.common.usecase.UseCaseHandler;;
 import com.uc.inventory.domain.inventory.model.Inventory;
 import com.uc.inventory.domain.inventory.port.InventoryPort;
 import lombok.RequiredArgsConstructor;

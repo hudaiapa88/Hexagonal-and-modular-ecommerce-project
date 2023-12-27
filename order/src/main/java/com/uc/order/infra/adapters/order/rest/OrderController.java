@@ -1,8 +1,8 @@
 package com.uc.order.infra.adapters.order.rest;
 
-import com.uc.common.usecase.NoUseCaseHandler;
-import com.uc.common.usecase.UseCaseHandler;
-import com.uc.common.usecase.VoidUseCaseHandler;
+import com.uc.order.domain.common.usecase.NoUseCaseHandler;
+import  com.uc.order.domain.common.usecase.UseCaseHandler;;
+import com.uc.order.domain.common.usecase.VoidUseCaseHandler;
 import com.uc.order.domain.order.model.Order;
 import com.uc.order.domain.order.usecase.CreateOrderUseCase;
 import com.uc.order.domain.order.usecase.DeleteOrderUseCase;
