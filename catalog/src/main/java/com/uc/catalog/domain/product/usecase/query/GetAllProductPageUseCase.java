@@ -1,13 +1,13 @@
-package com.uc.catalog.domain.product.usecase;
+package com.uc.catalog.domain.product.usecase.query;
 
 import com.uc.catalog.domain.common.page.PageableProperties;
 import  com.uc.catalog.domain.common.usecase.UseCase;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.Setter;
 
-@AllArgsConstructor
 @Getter
-public class GetProductByCategoryTitlePageUseCase implements UseCase {
-    private String categoryTitle;
+@AllArgsConstructor
+public class GetAllProductPageUseCase implements UseCase {
     private PageableProperties pageableProperties;
 }

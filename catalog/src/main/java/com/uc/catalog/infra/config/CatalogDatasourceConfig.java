@@ -26,7 +26,6 @@ import javax.sql.DataSource;
         basePackages = { "com.uc.catalog.infra" })
 @EntityScan(basePackages = "com.uc.catalog.infra")
 public class CatalogDatasourceConfig {
-public String moduleName;
     @Primary
     @Bean(name="catalogProperties")
     @ConfigurationProperties("catalog.datasource")

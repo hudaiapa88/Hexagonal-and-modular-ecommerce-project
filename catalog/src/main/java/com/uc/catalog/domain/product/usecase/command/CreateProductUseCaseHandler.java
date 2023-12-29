@@ -1,8 +1,8 @@
-package com.uc.catalog.domain.product.usecase;
+package com.uc.catalog.domain.product.usecase.command;
 
 import com.uc.catalog.domain.category.model.Category;
 import com.uc.catalog.domain.category.port.CategoryPort;
-import com.uc.catalog.domain.product.port.ProductPort;
+import com.uc.catalog.domain.product.port.ProductCommandPort;
 import com.uc.catalog.domain.product.model.Product;
 import  com.uc.catalog.domain.common.DomainComponent;
 import  com.uc.catalog.domain.common.usecase.UseCaseHandler;;
@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 @RequiredArgsConstructor
 public class CreateProductUseCaseHandler implements UseCaseHandler<Product, CreateProductUseCase> {
 
-    private final ProductPort productPort;
+    private final ProductCommandPort productCommandPort;
     private final CategoryPort categoryPort;
     @Override
     public Product handle(CreateProductUseCase createProductUseCase) {
@@ -23,6 +23,6 @@ public class CreateProductUseCaseHandler implements UseCaseHandler<Product, Crea
         product.setTitle(createProductUseCase.getTitle());
         product.setCategory(category);
         product.setPrice(createProductUseCase.getPrice());
-        return productPort.save(product);
+        return productCommandPort.save(product);
     }
 }

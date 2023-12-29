@@ -1,10 +1,11 @@
-package com.uc.catalog.domain.product.usecase;
+package com.uc.catalog.domain.product.usecase.query;
 
 import com.uc.catalog.domain.common.page.PageData;
 import com.uc.catalog.domain.common.usecase.UseCaseHandler;
 import com.uc.catalog.domain.product.model.Product;
-import com.uc.catalog.domain.product.port.ProductPort;
+import com.uc.catalog.domain.product.port.ProductCommandPort;
 import  com.uc.catalog.domain.common.DomainComponent;
+import com.uc.catalog.domain.product.port.ProductQueryPort;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -12,11 +13,11 @@ import lombok.extern.slf4j.Slf4j;
 @DomainComponent
 @RequiredArgsConstructor
 public class GetProductByPriceRangePageUseCaseHandler implements UseCaseHandler<PageData<Product>, GetProductByPriceRangePageUseCase> {
-    private final ProductPort productPort;
+    private final ProductQueryPort productQueryPort;
 
 
     @Override
     public PageData<Product> handle(GetProductByPriceRangePageUseCase value) {
-        return productPort.getByPriceRange(value.getMinPrice(),value.getMaxPrice(), value.getPageableProperties());
+        return productQueryPort.getByPriceRange(value.getMinPrice(),value.getMaxPrice(), value.getPageableProperties());
     }
 }

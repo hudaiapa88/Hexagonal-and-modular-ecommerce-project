@@ -22,6 +22,6 @@ public interface ProductElasticRepository extends ElasticsearchRepository<Produc
     List<ProductElastic> findByTitle(String title);
     @Query("{\"bool\": {\"must\": {\"match_phrase_prefix\": {\"title\": \"?0\"}}}}")
     Page<ProductElastic> customAutocompleteSearch(String input,Pageable pageable);
-
+    List<ProductElastic> findByIdIn(List<Long> ids);
     Page<ProductElastic> findByCategoryTitle(String categoryTitle, Pageable pageable);
 }

@@ -1,4 +1,4 @@
-package com.uc.catalog.domain.product.usecase;
+package com.uc.catalog.domain.product.usecase.command;
 
 import  com.uc.catalog.domain.common.usecase.UseCase;
 import lombok.AllArgsConstructor;
