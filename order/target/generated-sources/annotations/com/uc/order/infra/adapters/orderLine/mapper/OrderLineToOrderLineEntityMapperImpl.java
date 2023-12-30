@@ -8,6 +8,8 @@ import com.uc.order.infra.adapters.order.jpa.entity.OrderEntity;
 import com.uc.order.infra.adapters.orderLine.jpa.entity.OrderLineEntity;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.uc.order.infra.adapters.orderLine.jpa.mapper.OrderLineToOrderLineEntityMapper;
 import org.springframework.stereotype.Component;
 
 /*

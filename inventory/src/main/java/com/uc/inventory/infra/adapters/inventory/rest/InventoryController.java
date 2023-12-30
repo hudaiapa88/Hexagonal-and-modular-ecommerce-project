@@ -6,7 +6,7 @@ import  com.uc.inventory.domain.common.usecase.UseCaseHandler;;
 import com.uc.inventory.domain.common.usecase.VoidUseCaseHandler;
 import com.uc.inventory.domain.inventory.model.Inventory;
 import com.uc.inventory.domain.inventory.usecase.*;
-import com.uc.inventory.infra.adapters.inventory.mapper.InventoryToInventoryResponseMapper;
+import com.uc.inventory.infra.adapters.inventory.rest.mapper.InventoryToInventoryResponseMapper;
 import com.uc.inventory.infra.adapters.inventory.rest.request.CreateInventoryRequest;
 import com.uc.inventory.infra.adapters.inventory.rest.response.InventoryResponse;
 import jakarta.validation.Valid;

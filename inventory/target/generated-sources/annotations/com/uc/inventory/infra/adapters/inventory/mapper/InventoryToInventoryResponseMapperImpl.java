@@ -1,6 +1,7 @@
 package com.uc.inventory.infra.adapters.inventory.mapper;
 
 import com.uc.inventory.domain.inventory.model.Inventory;
+import com.uc.inventory.infra.adapters.inventory.rest.mapper.InventoryToInventoryResponseMapper;
 import com.uc.inventory.infra.adapters.inventory.rest.response.InventoryResponse;
 import java.util.ArrayList;
 import java.util.List;

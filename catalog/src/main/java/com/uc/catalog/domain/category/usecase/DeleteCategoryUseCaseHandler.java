@@ -4,7 +4,6 @@ package com.uc.catalog.domain.category.usecase;
 import com.uc.catalog.domain.category.port.CategoryPort;
 import  com.uc.catalog.domain.common.DomainComponent;
 import com.uc.catalog.domain.common.usecase.VoidUseCaseHandler;
-import com.uc.catalog.infra.adapters.category.CategoryAdapter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 

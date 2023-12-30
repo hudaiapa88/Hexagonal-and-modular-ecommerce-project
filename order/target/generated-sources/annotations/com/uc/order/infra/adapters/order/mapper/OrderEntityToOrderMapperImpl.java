@@ -6,6 +6,8 @@ import com.uc.order.infra.adapters.order.jpa.entity.AddressEntity;
 import com.uc.order.infra.adapters.order.jpa.entity.OrderEntity;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.uc.order.infra.adapters.order.jpa.mapper.OrderEntityToOrderMapper;
 import org.springframework.stereotype.Component;
 
 /*

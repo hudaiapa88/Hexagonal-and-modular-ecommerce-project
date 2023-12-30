@@ -8,7 +8,7 @@ import com.uc.catalog.domain.product.usecase.command.CreateProductUseCase;
 import com.uc.catalog.domain.product.usecase.command.DeleteProductUseCase;
 import com.uc.catalog.domain.product.usecase.query.*;
 import com.uc.catalog.infra.adapters.product.rest.request.CreateProductRequest;
-import com.uc.catalog.infra.adapters.product.mapper.ProductToProductResponseMapper;
+import com.uc.catalog.infra.adapters.product.rest.mapper.ProductToProductResponseMapper;
 import com.uc.catalog.infra.adapters.product.rest.response.ProductResponse;
 import  com.uc.catalog.domain.common.usecase.UseCaseHandler;;
 import io.swagger.v3.oas.annotations.Parameter;

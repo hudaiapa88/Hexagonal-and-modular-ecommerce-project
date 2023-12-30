@@ -8,7 +8,7 @@ import com.uc.order.domain.order.usecase.CreateOrderUseCase;
 import com.uc.order.domain.order.usecase.DeleteOrderUseCase;
 import com.uc.order.domain.order.usecase.GetOrderByOrderIdUseCase;
 import com.uc.order.domain.order.usecase.UpdateOrderUseCase;
-import com.uc.order.infra.adapters.order.mapper.OrderToOrderResponseMapper;
+import com.uc.order.infra.adapters.order.rest.mapper.OrderToOrderResponseMapper;
 import com.uc.order.infra.adapters.order.rest.request.CreateOrderRequest;
 import com.uc.order.infra.adapters.order.rest.request.UpdateOrderRequest;
 import com.uc.order.infra.adapters.order.rest.response.OrderResponse;

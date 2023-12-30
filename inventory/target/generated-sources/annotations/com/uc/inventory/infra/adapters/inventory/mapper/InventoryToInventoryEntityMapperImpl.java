@@ -4,6 +4,8 @@ import com.uc.inventory.domain.inventory.model.Inventory;
 import com.uc.inventory.infra.adapters.inventory.jpa.entity.InventoryEntity;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.uc.inventory.infra.adapters.inventory.jpa.mapper.InventoryToInventoryEntityMapper;
 import org.springframework.stereotype.Component;
 
 /*

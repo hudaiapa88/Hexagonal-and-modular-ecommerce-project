@@ -1,6 +1,7 @@
 package com.uc.order.infra.adapters.orderLine.mapper;
 
 import com.uc.order.domain.orderline.model.OrderLine;
+import com.uc.order.infra.adapters.orderLine.rest.mapper.OrderLineToOrderLineResponseMapper;
 import com.uc.order.infra.adapters.orderLine.rest.response.OrderLineResponse;
 import java.util.ArrayList;
 import java.util.List;
