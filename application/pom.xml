@@ -13,7 +13,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>application</name>
 	<description>Demo project for Spring Boot</description>
-
 	<dependencies>
 
 		<dependency>
@@ -23,17 +22,17 @@
 		</dependency>
 		<dependency>
 			<groupId>com.uc</groupId>
-			<artifactId>catalog</artifactId>
+			<artifactId>inventory-infra</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.uc</groupId>
-			<artifactId>order</artifactId>
+			<artifactId>catalog-infra</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.uc</groupId>
-			<artifactId>inventory</artifactId>
+			<artifactId>order-infra</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 

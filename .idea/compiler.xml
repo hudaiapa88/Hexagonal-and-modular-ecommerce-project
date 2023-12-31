@@ -18,20 +18,28 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.3.Final/mapstruct-1.5.3.Final.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
         </processorPath>
-        <module name="application" />
+        <module name="catalog-api" />
+        <module name="order-domain" />
+        <module name="catalog-infra" />
         <module name="shipping" />
-        <module name="catalog" />
+        <module name="application" />
+        <module name="inventory-infra" />
+        <module name="catalog-domain" />
         <module name="payment" />
-        <module name="inventory" />
+        <module name="order-infra" />
         <module name="account" />
-        <module name="order" />
+        <module name="inventory-domain" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="catalog.domain" target="17" />
       <module name="category" target="17" />
       <module name="category (1)" target="17" />
       <module name="common" target="17" />
+      <module name="domain (1)" target="17" />
+      <module name="domain (1) (com.uc.catalog)" target="17" />
       <module name="Hexagonal-and-modular-restourant-project" target="17" />
+      <module name="infra (1) (com.uc.catalog)" target="17" />
       <module name="product" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -42,12 +50,21 @@
       <module name="application" options="-parameters" />
       <module name="cafe" options="-parameters" />
       <module name="catalog" options="-parameters" />
+      <module name="catalog-api" options="-parameters" />
+      <module name="catalog-domain" options="-parameters" />
+      <module name="catalog-infra" options="-parameters" />
+      <module name="catalog.domain" options="-parameters" />
       <module name="category" options="-parameters" />
       <module name="category (1)" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="ecommerce" options="-parameters" />
+      <module name="infra (1) (com.uc.catalog)" options="-parameters" />
       <module name="inventory" options="-parameters" />
+      <module name="inventory-domain" options="-parameters" />
+      <module name="inventory-infra" options="-parameters" />
       <module name="order" options="-parameters" />
+      <module name="order-domain" options="-parameters" />
+      <module name="order-infra" options="-parameters" />
       <module name="payment" options="-parameters" />
       <module name="product" options="-parameters" />
       <module name="restaurant" options="" />
